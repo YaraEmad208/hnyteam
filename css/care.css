@@ -1,0 +1,402 @@
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    padding: 15px;
+   
+    display: block;
+    
+}
+
+#navbar li ul {
+    
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #E3E6F3;
+    display: none;
+}
+
+#navbar li ul li {
+    
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+    position: relative;
+    right: 15px;
+}
+
+#navbar li:focus-within>ul,
+
+#navbar li:hover>ul {
+    display: initial;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+@media (max-width:799px) {
+
+    .section-p1{
+       padding: 40px 40px;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0, 0.01);
+        padding: 80px 0 0 10px ;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #navbar li ul{
+         position: relative;
+         width: 100%;
+    }
+
+    #navbar li ul li{
+        background: #E3E6F3;
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left:20px ;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #hero{
+         
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+        
+    }
+
+    #product1 .pro-container{
+        justify-content:center;
+    }
+
+    #product1 .pro{
+        margin: 15px;
+    }
+
+    #newsletter .form{
+        width: 70%;
+    }
+    .content{
+        margin-left: 150px;
+    }
+    .coma{
+        margin-left: -200px;
+    }
+}
+
+.caring{
+    
+        background-image: url("../media/electrical-divises/back2.jpg");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+}
+
+.care h1 {
+    font-size: 36px;
+    color: #b0a6a6;
+    text-align: center;
+}
+.shad{
+    text-align: center;
+    margin-top:100px;
+    font-size: 60px;
+    text-shadow:10px 1px  #cfcfcfc1;
+
+}
+
+.choose{
+    background-color: #0c4b7f;
+    font-size: 45px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin: 120px;
+    transition: 0.7s ease;
+    box-shadow: 0 5px 20px gray;
+}
+.choose a{
+    text-decoration:none ;
+    color: white;
+}
+.choose a:hover{
+    color:black;
+    
+}
+.choose:hover{
+    transform: scale(1.1);
+}
+.lo{
+    display: inline-block;
+}
+#Rush {
+    margin-left: 26px;
+    text-align: center;
+}
+#cherry {
+    margin-left: 26px;
+    text-align: center;
+}
+#fortune {
+    margin-left: 26px;
+    text-align: center;
+    
+}
+
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #088178;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  }
+  .content{
+    margin-top: 30px ;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: inline-block;
+    
+}
+
+
+.card{
+    background-color: white;
+    width: 17em;
+    box-shadow: 0 5px 20px gray;
+    border-radius: 10px;
+    padding: 25px ;
+    min-height: 14;
+    width: 18em;
+    overflow: hidden;
+    margin:21px;
+    margin-right: 67px;
+    margin-bottom: 70px;
+    transition: 0.7s ease;
+   
+
+}
+.coma img
+{
+   width: 75%;
+   margin-left: 200px;
+}
+.img img{
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    
+}
+.card:hover .img{
+    opacity: 0.9;
+}
+.info{
+    padding: 1em;
+}
+.info .buy {
+    text-decoration: none;
+    color:#E3E6F3;
+    background-color: #0c4b7f;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+   
+}
+
+.info .buy:hover{
+    color:black;
+
+    
+}
+.end{
+    text-align: center;
+    margin-top:100px;
+    font-size: 40px;
+    text-shadow:10px 1px  #cfcfcfc1;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#E3E6F3;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+
+
+
+
+
+@media  (max-width:477px) {
+
+    .section-p1{
+        padding: 20px;
+    }
+
+     
+ }
+
+

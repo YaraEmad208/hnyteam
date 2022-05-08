@@ -1,0 +1,277 @@
+@media all{
+
+    body{
+        width: 100%;
+        margin: 0;
+        background: #fbf6f6;
+    
+    }
+    /*nav*/
+    
+    
+    .section-p1{
+        padding: 40px 80px;
+    }
+    
+    .section-m1{
+        margin: 40px 0;
+    }
+    
+    
+    /*header start*/
+    
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 80px;
+        background: #E3E6F3;
+        box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #navbar li{
+        list-style: none;
+        padding: 0 20px ;
+        position: relative;
+    }
+    
+    #navbar li a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+        padding: 15px;/*new*/
+        display: block;/*new*/
+    }
+    
+    #navbar li ul{/*new*/
+        position: absolute;
+        left: 0;
+        width: 200px;
+        background: #E3E6F3;
+        display: none;
+    }
+    
+    #navbar li ul li{/*new*/
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0, 0.02);
+    }
+    
+    #navbar li:focus-within  ul,/*new*/
+    #navbar li:hover > ul{
+         display: initial;
+    }
+    
+    #navbar li a:hover,
+    #navbar li a:active{
+        color: #088178;
+    }
+    
+    #navbar li a.active::after,
+    #navbar li a:hover::after{
+        content: "";
+        width: 30%;
+        height: 2px;
+        background: #088178;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+    }
+    
+    #mobile{
+        display:none;
+        align-items: center;
+    }
+    
+    #close{
+        display: none;
+    }
+    
+    
+    
+    
+    img{
+    width:400px;
+    height:500px;
+    }
+    .ar,.hr,.ac,.an{background: #673ab71a;
+    
+        border-left: 8px solid black;
+    }
+    
+    P{
+    font-size:40px;
+    
+    /*text-shadow: 3px 2px #877777;*/
+    margin: 8px;
+        padding: 10px;
+    }
+    
+    
+    
+    
+    
+    .one{
+    width:100%;
+    height:263px;
+    
+        margin: auto;
+        padding: 10px;
+    
+    }
+    
+    .cc{
+    position: absolute;
+        font-size: 22px;
+        top:181px;
+        padding: 24px;
+        color: currentcolor;
+    font-family: emoji;
+    left:405px;
+    }
+    
+    
+    table {
+        width: 600px;
+     position: relative;
+        top: -280px;
+       left: 600px;
+        direction: rtl;}
+    th{
+        border: 2px solid #ddd;
+        text-align: center;
+        font-size: 37px;
+      width: 400px;
+    }
+    td{
+        position: relative;
+        left: 0px;
+        border: 2px solid #ddd;
+        text-align: center;
+        width: 200px;
+      font-size: 27px;
+    }
+    .checked{
+    color:orange;
+    }
+    
+    
+    .im{color: red;
+    position: relative;
+        top: 170px;
+        padding: 10px;
+    left:30px;
+    
+    }
+    
+    button{
+    
+    
+    position: relative;
+        left: 282px;
+        top: -56px;
+        font-size: 22px;}
+    iframe{
+    
+    position: relative;
+        top: -84px;
+        padding: 27px;
+        margin: 10px;
+    
+    }
+    
+    .a{position: relative;
+        left: 127px;
+        top: -76px;
+    }
+    
+    .a2,.s{position: relative;
+        left: 140px;
+        top: -56px;
+    }
+    
+    .f{position: relative;
+        left: 190px;
+        top: -56px;}
+    
+    .d{position: relative;
+        left: 323px;
+        top: -56px;}
+    
+    
+    
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color:#E3E6F3;
+    }
+     .col{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    
+    footer h4{
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    
+    footer p{
+        font-size: 13px;
+        margin: 0 0 8px 0;
+    }
+    
+    footer a{
+        font-size: 13px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    
+    footer .follow{
+        margin-top: 20px;
+    
+    }
+    
+    footer .follow i{
+        color: #465b52;
+        padding-right: 4px;
+        cursor: pointer;
+    }
+    
+    footer .follow i:hover,
+    footer a:hover{
+        color: #088178;
+    }
+    
+     .copyright{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    
+    
+    @media  (max-width:477px) {
+    
+        .section-p1{
+            padding: 20px;
+        }
+    
+     footer .copyright{
+       
+        text-align: center;
+    } }   }      

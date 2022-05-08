@@ -1,0 +1,2336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Men's Fashion</title>
+    <link href="css/all.min.css" rel="sheetstyle">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+       .section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*header start*/
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    padding: 15px;
+    /*new*/
+    display: block;
+    /*new*/
+}
+
+#navbar li ul {
+    /*new*/
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #E3E6F3;
+    display: none;
+}
+
+#navbar li ul li {
+    /*new*/
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+    position: relative;
+    right: 15px;
+}
+
+#navbar li:focus-within>ul,
+/*new*/
+#navbar li:hover>ul {
+    display: initial;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+@media (max-width:799px) {
+
+    .section-p1{
+       padding: 40px 40px;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0, 0.01);
+        padding: 80px 0 0 10px ;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #navbar li ul{/*new*/
+         position: relative;
+         width: 100%;
+    }
+
+    #navbar li ul li{/*new*/
+        background: #E3E6F3;
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left:20px ;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #hero{
+         
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+        
+    }
+
+    #product1 .pro-container{
+        justify-content:center;
+    }
+
+    #product1 .pro{
+        margin: 15px;
+    }
+
+    #newsletter .form{
+        width: 70%;
+    }
+}
+        /* شكل الويب سايت */
+        body {
+            margin: 0;
+            background: #e6e6e6;
+        }
+
+        /* السلايدر */
+        .showSlide {
+            display: none
+        }
+
+        .showSlide img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .slidercontainer {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* الاشاارات ف الاسلايدر */
+        .left,
+        .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: rgba(0, 0, 0, 0.998);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .right {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .left:hover,
+        .right:hover {
+            background-color: rgba(66, 175, 215, 0.8);
+        }
+
+        .mass {
+            color: #03392f;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: justify;
+            text-shadow: 1px 1px #88e0db;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* الصور ال تعريفيه ال ف محتوي الصفحه */
+        #con {
+            text-align: center;
+            color: #032;
+            text-shadow: 1px 1px #a2f2ee;
+
+        }
+
+        .thes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .clo img {
+            width: 300px;
+            height: 300px;
+            display: flex;
+        }
+
+        .clo img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+
+        .clo img:hover {
+            border-radius: 20px;
+            transform: scaleX(-1);
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .textt {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        /* وازاي اغير ف مقاسهم و الكتابه بتاعتم اول جروب للصور بتاع البدل  */
+        .group {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px;
+            column-gap: 45px;
+            row-gap: 90px;
+            width: 1200px;
+            height: 680px;
+            justify-content: center;
+        }
+
+        #sn {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        .hey img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .hey img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .hey img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .cont {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #kkkk {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #ssss {
+            text-align: right;
+        }
+
+        #ghg {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #ghg:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+
+        }
+
+        /* جروب التيشيرتات و القمصان و خصايصهم و كلامهم */
+        .multi {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px;
+            column-gap: 45px;
+            row-gap: 100px;
+            width: 1200px;
+            height: 680px;
+            justify-content: center;
+        }
+
+        #pq {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        .hello img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .hello img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .hello img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .sep {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #nnn {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #shsh {
+            text-align: right;
+        }
+
+        #pup {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #pup:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+
+        }
+
+        /* جروب صور ال جواه البناطيل و كلامهم و تنظيمهم */
+        .many {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px;
+            column-gap: 45px;
+            row-gap: 100px;
+            width: 1200px;
+            height: 680px;
+            justify-content: center;
+        }
+
+        #qp {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        .wel img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .wel img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .wel img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .tem {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #sss {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #ooh {
+            text-align: right;
+        }
+
+        #pew {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #pew:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+
+        }
+
+        /* و تنظيمهم و كلامهم . جروب السويتشيرتات و الجواكت و البلوفلارات */
+        .you {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px 300px;
+            column-gap: 45px;
+            row-gap: 100px;
+            width: 1200px;
+            height: 1100px;
+            justify-content: center;
+        }
+
+        #yes {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        .noo img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .noo img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .noo img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .loo {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #soo {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #mee {
+            text-align: right;
+        }
+
+        #new {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #new:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+
+        }
+
+        /* قسم العبايات و تنظيمهم و كلامهم */
+
+        .cow {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px;
+            column-gap: 45px;
+            row-gap: 100px;
+            width: 1200px;
+            height: 720px;
+            justify-content: center;
+        }
+
+        #now {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        .maw img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .maw img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .maw img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .saw {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #low {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #sow {
+            text-align: right;
+        }
+
+        #law {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #law:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+            /* ملابس اطفالي ولادي  */
+        }
+
+        .b3 {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px 300px;
+            column-gap: 45px;
+            row-gap: 100px;
+            width: 1200px;
+            height: 720px;
+            justify-content: center;
+        }
+
+        .b4 img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .b4 img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .b4 img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .b5 {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #b6 {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #b2 {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        #b8 {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #b8:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+
+        }
+
+        #b7 {
+            text-align: right;
+        }
+
+        /* الملابس الرياضيه */
+
+        /* تنظيم الملابس الرياضيه  */
+        .a3 {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px 300px;
+            column-gap: 45px;
+            row-gap: 100px;
+            width: 1200px;
+            height: 720px;
+            justify-content: center;
+        }
+
+        .a4 img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .a4 img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .a4 img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .a5 {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #a6 {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #a2 {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        #a8 {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #a8:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+
+        }
+
+        #a7 {
+            text-align: right;
+        }
+
+        /* الملابس الداخليه و تنظيمهم و كلامهم  */
+        .aaa {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px 300px;
+            column-gap: 45px;
+            row-gap: 100px;
+            width: 1200px;
+            height: 720px;
+            justify-content: center;
+        }
+
+        .eee img {
+            width: 200px;
+            height: 300px;
+            transition: all .5s linear;
+        }
+
+        .eee img {
+            margin-bottom: 10px;
+            margin-bottom: color #71ebd9;
+
+        }
+
+        .eee img:hover {
+            width: 240px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+        }
+
+        .ggg {
+            text-align: center;
+            color: #021e1ae3;
+        }
+
+        #lel {
+            text-align: right;
+            color: #273103;
+
+        }
+
+        #non {
+            text-align: left;
+            color: #032146e3;
+
+        }
+
+        #hah {
+            border: 1px solid rgb(97, 59, 59);
+            padding: 15px;
+            color: #fff;
+            background-color: #052a28;
+            border-radius: 5px;
+            transition: all .5s;
+
+        }
+
+        #hah:hover {
+            border: 1px solid rgb(240, 126, 126);
+            padding: 15px;
+            color: black;
+            background-color: #c2edeb;
+            border-radius: 5px;
+
+        }
+
+        #nan {
+            text-align: right;
+        }
+
+
+
+
+        /* نجوم التقييم من 32 لحد91 كل صوره ب كلاس غير التاني غير اخر 8 بنفس كلاس 32 */
+        .a32a {
+            color: orange;
+        }
+
+        .a33a {
+            color: orange;
+        }
+
+        .a34a {
+            color: orange;
+        }
+
+        .a35a {
+            color: orange;
+        }
+
+        .a36a {
+            color: orange;
+        }
+
+        .a37a {
+            color: orange;
+        }
+
+        .a38a {
+            color: orange;
+        }
+
+        .a39a {
+            color: orange;
+        }
+
+        .a40a {
+            color: orange;
+        }
+
+        .a41a {
+            color: orange;
+        }
+
+        .a42a {
+            color: orange;
+        }
+
+        .a43a {
+            color: orange;
+        }
+
+        .a44a {
+            color: orange;
+        }
+
+        .a45a {
+            color: orange;
+        }
+
+        .a46a {
+            color: orange;
+        }
+
+        .a47a {
+            color: orange;
+        }
+
+        .a48a {
+            color: orange;
+        }
+
+        .a49a {
+            color: orange;
+        }
+
+        .a50a {
+            color: orange;
+        }
+
+        .a51a {
+            color: orange;
+        }
+
+        .a52a {
+            color: orange;
+        }
+
+        .a53a {
+            color: orange;
+        }
+
+        .a54a {
+            color: orange;
+        }
+
+        .a55a {
+            color: orange;
+        }
+
+        .a56a {
+            color: orange;
+        }
+
+        .a57a {
+            color: orange;
+        }
+
+        .a58a {
+            color: orange;
+        }
+
+        .a59a {
+            color: orange;
+        }
+
+        .a60a {
+            color: orange;
+        }
+
+        .a61a {
+            color: orange;
+        }
+
+        .a62a {
+            color: orange;
+        }
+
+        .a63a {
+            color: orange;
+        }
+
+        .a64a {
+            color: orange;
+        }
+
+        .a65a {
+            color: orange;
+        }
+
+        .a66a {
+            color: orange;
+        }
+
+        .a67a {
+            color: orange;
+        }
+
+        .a68a {
+            color: orange;
+        }
+
+        .a69a {
+            color: orange;
+        }
+
+        .a70a {
+            color: orange;
+        }
+
+        .a71a {
+            color: orange;
+        }
+
+        .a72a {
+            color: orange;
+        }
+
+        .a73a {
+            color: orange;
+        }
+
+        .a74a {
+            color: orange;
+        }
+
+        .a75a {
+            color: orange;
+        }
+
+        .a76a {
+            color: orange;
+        }
+
+        .a77a {
+            color: orange;
+        }
+
+        .a78a {
+            color: orange;
+        }
+
+        .a79a {
+            color: orange;
+        }
+
+        .a80a {
+            color: orange;
+        }
+
+        .a81a {
+            color: orange;
+        }
+
+        .a82a {
+            color: orange;
+        }
+
+        .a83a {
+            color: orange;
+        }
+
+        .a84a {
+            color: orange;
+        }
+
+        .a85a {
+            color: orange;
+        }
+
+        .a86a {
+            color: orange;
+        }
+
+        .a87a {
+            color: orange;
+        }
+
+        .a88a {
+            color: orange;
+        }
+
+        .a89a {
+            color: orange;
+        }
+
+        .a90a {
+            color: orange;
+        }
+
+        .a91a {
+            color: orange;
+        }
+
+        /* الفوتر */
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #E3E6F3;
+        }
+
+        footer .col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        footer h4 {
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin: 0 0 8px 0;
+        }
+
+        footer a {
+            font-size: 13px;
+            text-decoration: none;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        footer .follow {
+            margin-top: 20px;
+
+        }
+
+        footer .follow i {
+            color: #465b52;
+            padding-right: 4px;
+            cursor: pointer;
+        }
+
+        footer .follow i:hover,
+        footer a:hover {
+            color: #088178;
+        }
+
+        footer .copyright {
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width:477px) {
+
+            .section-p1 {
+                padding: 20px;
+            }
+
+            footer .copyright {
+                text-align: start;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="header">
+        <!--
+        <a href="#"><img src="./media/nourhanfouad_media10/logo1.jpg" class="logo" alt=""></a>
+        -->
+        <div class="logo">
+            <h1>HNY</h1>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#" class="active">Shopping</a>
+                    <ul>
+                        <li><a href="index.html">Women And Girls Wear </a></li>
+                        <li><a href="index1.html">Women And Girls Shoe</a></li>
+                        <li><a href="trying1.html">Men And Boys Wear</a></li>
+                        <li><a href="trying22.html">Men And Boys Shoe</a></li>
+                        <li><a href="hoda2.html">Accessories</a></li>
+                    
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Dining</a>
+                    <ul>
+                        <li><a href="page2.html">Food Cort</a></li>
+                        <li><a href="page3.html">Cafe</a></li>
+                        <li><a href="page1.html">Market</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Entertainment</a>
+                    <ul>
+                        <li><a href="sprkiz.htm">Kids area</a></li>
+                        <li><a href="cienma.htm">Cenima</a></li>
+                        
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Beauty</a>
+                    <ul>
+                        <li><a href="nour3.html.html">Skin Care</a></li>
+                        <li><a href="nour.html.html">Hair Care</a></li>
+                        <li><a href="nour2.html.html">Make Up</a></li>
+                        <li><a href="care.html">Personal Caring Devicies</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="#">Electronics</a>
+                    <ul>
+                        <li><a href="electrical-devicies.html">Electrical Devicies</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >More</a>
+                    <ul>
+
+
+                        <li><a href="hoda.html">Books</a></li>
+                        <li><a href="car-showroom.html">Car Showroom</a></li>
+
+                    </ul>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- الاغنيه -->
+    <audio controls autoplay loop>
+        <source src="./media/nourhanfouad_media/mh5.mpeg" type="audio/ogg">
+
+    </audio>
+    <!-- الاسلايدر -->
+    <div class="slidercontainer">
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\po.jpg" style="width:100%;height:600px;" />
+            <div class="mass">ALTON LANE Store<h6>Shop now</h6>
+            </div>
+        </div>
+
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\rz.webp" style="width:100%;height:600px;" />
+            <div class="mass">Defacto Store<h6>Shop now</h6>
+            </div>
+        </div>
+
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\nono.webp" style="width:100%;height:600px;" />
+            <div class="mass">LUISAVIAROMA Store<h6>Shop now</h6>
+            </div>
+        </div>
+
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\gh.jpg" style="width:100%;height:600px;" />
+            <div class="mass">H&M Store<h6>Shop now</h6>
+            </div>
+        </div>
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\of.jpg" style="width:100%;height:600px;" />
+            <div class="mass">Alibaba Store<h6>Shop now</h6>
+            </div>
+        </div>
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\uuuu.jpg" style="width:100%;height:600px;" />
+            <div class="mass">Embrator Store<h6>Shop now</h6>
+            </div>
+        </div>
+
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\bdb.jpeg" style="width:100%;height:600px;" />
+            <div class="mass">Adidas store<h6>Shop now</h6>
+            </div>
+        </div>
+        <div class="showSlide">
+            <img src="./media/nourhanfouad_media\nq.jpg" style="width:100%;height:600px;" />
+            <div class="mass">J.CREW Store<h6>Shop now</h6>
+            </div>
+        </div>
+        <!-- اليمين و الشمال ف الاسلايدر -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+    </div>
+    <hr><br>
+    <h3 id="con"><em>YOUR NEW-SEASON WARDROBE STARTS HERE</em></h3>
+    <!-- توزيع الملابس و ايه ال جوه الويب سايت -->
+    <div class="thes">
+        <div class="clo">
+            <img src="./media/nourhanfouad_media\samar.webp">
+            <div class="texxt">
+                <p> For Summer</p>
+            </div>
+        </div>
+        <div class="clo">
+            <img src="./media/nourhanfouad_media\winter.jpg">
+            <div class="texxt">
+                <p> For Winter</p>
+            </div>
+        </div>
+        <div class="clo">
+            <img src="./media/nourhanfouad_media\occa.jpg">
+            <div class="texxt">
+                <p> For Occasions</p>
+            </div>
+        </div>
+        <div class="clo">
+            <img src="./media/nourhanfouad_media\kok.jpeg">
+            <div class="texxt">
+                <p> Sports Wear</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <!-- قسم البدل  -->
+    <div class="every">
+        <h3 id="sn">DIFFERENT IN SUIT AND BLAZER STYLES FROM ALTON LANE</h3>
+        <div class="group">
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\pt.jpg">
+                <div class="cont">The Blake Deep Blue Birdseye<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                </div>
+            </div>
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\po.jpg">
+                <div class="cont">The Weston Dark Grey Mohair Blend<span class="fa fa-star a33a"></span>
+                    <span class="fa fa-star a33a"></span>
+                    <span class="fa fa-star a33a"></span>
+                    <span class="fa fa-star a33a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\pm.jpg">
+                <div class="cont">The Stewart Steel Blue Plaid<span class="fa fa-star a34a"></span>
+                    <span class="fa fa-star a34a"></span>
+                    <span class="fa fa-star a34a"></span>
+                    <span class="fa fa-star a34a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\pn.jpg">
+                <div class="cont">The Hayden Sand Performance<span class="fa fa-star a35a"></span>
+                    <span class="fa fa-star a35a"></span>
+                    <span class="fa fa-star a35a"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\pv.jpg">
+                <div class="cont">The Bradley Deep Blue Heathered Windowpane<span class="fa fa-star a36a"></span>
+                    <span class="fa fa-star a36a"></span>
+                    <span class="fa fa-star a36a"></span>
+                    <span class="fa fa-star a36a"></span>
+                    <span class="fa fa-star a36a"></span>
+                </div>
+            </div>
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\pe.jpg">
+                <div class="cont">The Whitney Mid Grey Pinstripe<span class="fa fa-star a37a"></span>
+                    <span class="fa fa-star a37a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\wow.jpg">
+                <div class="cont">The Austin Light Grey Heathered Plaid<span class="fa fa-star a38a"></span>
+                    <span class="fa fa-star a38a"></span>
+                    <span class="fa fa-star a38a"></span>
+                    <span class="fa fa-star a38a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hey">
+                <img src="./media/nourhanfouad_media\ph.jpg">
+                <div class="cont">The Noah Midnight Textured Hopsack<span class="fa fa-star a39a"></span>
+                    <span class="fa fa-star a39a"></span>
+                    <span class="fa fa-star a39a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="kkkk">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زرار موقع ال جواه البدل -->
+        <div id="ssss">
+            <button id="ghg" onclick=" document.location=' https://www.altonlane.com/custom-made/suits'">ALTON LANE
+        </div></button>
+    </div>
+    <hr>
+    </div>
+    <!-- قسم التشيرتات و القمصان -->
+    <div class="all">
+        <h3 id="pq">DIFFERENT IN SHIRT AND T_SHIRTS STYLES FROM DEFACTO</h3>
+        <div class="multi">
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\ru.webp">
+                <div class="sep">
+                    DeFacto Man Long Sleeve Denim Shirt Men's Blue<span class="fa fa-star a40a"></span>
+                    <span class="fa fa-star a40a"></span>
+                    <span class="fa fa-star a40a"></span>
+                    <span class="fa fa-star a40a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\rc.jpg">
+                <div class="sep">
+
+                    Shirts | Mens Defacto Fit Erkek Slim Fit Long-Sleeved Flannel Shirt Red<span
+                        class="fa fa-star a41a"></span>
+                    <span class="fa fa-star a41a"></span>
+                    <span class="fa fa-star a41a"></span>
+                    <span class="fa fa-star a41a"></span>
+                    <span class="fa fa-star a41a"></span>
+                </div>
+            </div>
+
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\rv.jpg">
+                <div class="sep">
+
+                    Defacto Man Cotton Long Sleeve Shirt<span class="fa fa-star a42a"></span>
+                    <span class="fa fa-star a42a"></span>
+                    <span class="fa fa-star a42a"></span>
+                    <span class="fa fa-star a42a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\rf.jpg">
+                <div class="sep">
+
+                    Defacto Man Brown Modern Fit Buttondown Polo Neck Long Sleeve Shirt </div><span
+                    class="fa fa-star a47a"></span>
+                <span class="fa fa-star a47a"></span>
+                <span class="fa fa-star a47a"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\ry.jpg">
+                <div class="sep"> Defacto Floral T-Shirts for Men<span class="fa fa-star a43a"></span>
+                    <span class="fa fa-star a43a"></span>
+                    <span class="fa fa-star a43a"></span>
+                    <span class="fa fa-star a43a"></span>
+                    <span class="fa fa-star a43a"></span>
+                </div>
+            </div>
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\rw.jpg">
+                <div class="sep">
+                    T-Shirts | Mens Defacto Fit Erkek Regular Fit Basic Cotton T-Shirt green<span
+                        class="fa fa-star a44a"></span>
+                    <span class="fa fa-star a44a"></span>
+                    <span class="fa fa-star a44a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\re.jpg">
+                <div class="sep">
+                    T-Shirts | Mens Defacto Fit Erkek Slim Fit Plain T-Shirt Blue<span class="fa fa-star a45a"></span>
+                    <span class="fa fa-star a45a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="hello">
+                <img src="./media/nourhanfouad_media\ro.jpg">
+                <div class="sep">
+                    Defacto Erkek Beyaz Desenli Slim Fit Polo T-Shirt<span class="fa fa-star a46a"></span>
+                    <span class="fa fa-star a46a"></span>
+                    <span class="fa fa-star a46a"></span>
+                    <span class="fa fa-star a46a"></span>
+                    <span class="fa fa-star a46a"></span>
+                </div>
+            </div>
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="nnn">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زرار الموقع بتاع التشيرتات -->
+        <div id="shsh">
+            <button id="pup" onclick=" document.location='https://www.defacto.com/ar-eg'">Defacto</button>
+        </div>
+    </div>
+    <hr>
+    </div>
+
+    <!-- قسم البناطيل -->
+    <div class="any">
+        <h3 id="qp">DIFFERENT IN TROUSERS STYLE FROM LUISAVIAROMA</h3>
+        <div class="many">
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\toos.webp">
+                <div class="tem">TAILORED LOOSE VISCOSE BLEND SWEATPANTS<span class="fa fa-star a48a"></span>
+                    <span class="fa fa-star a48a"></span>
+                    <span class="fa fa-star a48a"></span>
+                    <span class="fa fa-star a48a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\tus.webp">
+                <div class="tem">SKIPPER COTTON CHINO PANTS<span class="fa fa-star a49a"></span>
+                    <span class="fa fa-star a49a"></span>
+                    <span class="fa fa-star a49a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\tts.webp">
+                <div class="tem">STRIPED COTTON STRETCH CORDUROY PANTS<span class="fa fa-star a50a"></span>
+                    <span class="fa fa-star a50a"></span>
+                    <span class="fa fa-star a50a"></span>
+                    <span class="fa fa-star a50a"></span>
+                    <span class="fa fa-star a50a"></span>
+                </div>
+            </div>
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\tys.webp">
+                <div class="tem">STRETCH COTTON CARGO PANTS<span class="fa fa-star a51a"></span>
+                    <span class="fa fa-star a51a"></span>
+                    <span class="fa fa-star a51a"></span>
+                    <span class="fa fa-star a51a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\trs.webp">
+                <div class="tem">REVERSE WOOL TWILL PANTS <span class="fa fa-star a52a"></span>
+                    <span class="fa fa-star a52a"></span>
+                    <span class="fa fa-star a52a"></span>
+                    <span class="fa fa-star a52a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\tvs.webp">
+                <div class="tem">18CM NEW COTTON DENIM JEANS<span class="fa fa-star a53a"></span>
+                    <span class="fa fa-star a53a"></span>
+                    <span class="fa fa-star a53a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\tns.webp">
+                <div class="tem">LOGO PRINT TECH JERSEY TRACK PANTS<span class="fa fa-star a54a"></span>
+                    <span class="fa fa-star a54a"></span>
+                    <span class="fa fa-star a54a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="wel">
+                <img src="./media/nourhanfouad_media\txs.webp">
+                <div class="tem"> TRACK PANTS<span class="fa fa-star a55a"></span>
+                    <span class="fa fa-star a55a"></span>
+                    <span class="fa fa-star a55a"></span>
+                    <span class="fa fa-star a55a"></span>
+                    <span class="fa fa-star a55a"></span>
+                </div>
+            </div>
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="sss">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زرار موقع قسن البناطيل -->
+        <div id="ooh">
+            <button id="pew"
+                onclick=" document.location='https://www.luisaviaroma.com/en-eg/?aka_re=1'">LUISAVIAROMA</button>
+        </div>
+    </div>
+    <hr>
+    </div>
+    <!-- قسم  الحاجات الشتوي -->
+    <div class="yeb">
+        <h3 id="yes">DIFFERENT IN SWEATSHIRT, PULLOVER AND JACKET STYLES FROM H&M</h3>
+        <div class="you">
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gyy.jpg">
+                <div class="loo">
+                    Brand: H&M
+                    Hoodie in sweatshirt fabric with a double-layered drawstring hood<span
+                        class="fa fa-star a56a"></span>
+                    <span class="fa fa-star a56a"></span>
+                    <span class="fa fa-star a56a"></span>
+                    <span class="fa fa-star a56a"></span>
+                    <span class="fa fa-star a56a"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gtt.webp">
+                <div class="loo">
+                    H&M Sweatshirt in Gray for Men | Lyst<span class="fa fa-star a57a"></span>
+                    <span class="fa fa-star a57a"></span>
+                    <span class="fa fa-star a57a"></span>
+                    <span class="fa fa-star a57a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\ghh.jpg">
+                <div class="loo">
+                    H&M
+                    Sleeve panel-detail hoodie - Black - Men | H&M<span class="fa fa-star a58a"></span>
+                    <span class="fa fa-star a58a"></span>
+                    <span class="fa fa-star a58a"></span>
+                    <span class="fa fa-star a58a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\goo.webp">
+                <div class="loo">
+
+                    Shop Hoodies & Sweatshirts Collection for Men | H&M<span class="fa fa-star a59a"></span>
+                    <span class="fa fa-star a59a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\guu.jpg">
+                <div class="loo">
+
+                    Relaxed Fit cable-knit jumper<span class="fa fa-star a60a"></span>
+                    <span class="fa fa-star a60a"></span>
+                    <span class="fa fa-star a60a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gjj.jpg">
+                <div class="loo">
+
+                    Relaxed Fit Jacquard-knit Sweater<span class="fa fa-star a61a"></span>
+                    <span class="fa fa-star a61a"></span>
+                    <span class="fa fa-star a61a"></span>
+                    <span class="fa fa-star a61a"></span>
+                    <span class="fa fa-star a61a"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gnn.jpg">
+                <div class="loo">
+
+                    Relaxed Fit Fine-knit Cotton Sweater<span class="fa fa-star a62a"></span>
+                    <span class="fa fa-star a62a"></span>
+                    <span class="fa fa-star a62a"></span>
+                    <span class="fa fa-star a62a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gbb.jpg">
+                <div class="loo">Sean O'Pry for H&M – 'Winter Knits' <span class="fa fa-star a63a"></span>
+                    <span class="fa fa-star a63a"></span>
+                    <span class="fa fa-star a63a"></span>
+                    <span class="fa fa-star a63a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gff.jpg">
+                <div class="loo">
+
+                    Water-repellent puffer jacket<span class="fa fa-star a64a"></span>
+                    <span class="fa fa-star a64a"></span>
+                    <span class="fa fa-star a64a"></span>
+                    <span class="fa fa-star a64a"></span>
+                    <span class="fa fa-star a64a"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gvv.jpg">
+                <div class="loo">
+                    H&M
+                    Biker Jacket<span class="fa fa-star a65a"></span>
+                    <span class="fa fa-star a65a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gzz.jpg">
+                <div class="loo">Regular Fit Teddy jacket<span class="fa fa-star a66a"></span>
+                    <span class="fa fa-star a66a"></span>
+                    <span class="fa fa-star a66a"></span>
+                    <span class="fa fa-star a66a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="noo">
+                <img src="./media/nourhanfouad_media\gkk.jpg">
+                <div class="loo">
+                    H&M
+                    Teddy jacket<span class="fa fa-star a67a"></span>
+                    <span class="fa fa-star a67a"></span>
+                    <span class="fa fa-star a67a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+
+
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="soo">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زرار موقع الجواكت و البلوفلرات و السويتشيرتات -->
+        <div id="mee">
+            <button id="new" onclick=" document.location='https://eg.hm.com/en/shop-men/'">H&M</button>
+        </div>
+    </div>
+    <hr>
+    </div>
+
+
+    <!-- قسم العبايات -->
+    <div class="wow">
+        <h3 id="now">DIFFERENT IN ABAYA STYLES FROM ALIBABA</h3>
+        <div class="cow">
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\olo.jpg">
+                <div class="saw">
+
+                    Alibaba.com
+                    Hot Sale High Quality Muslim Arab Middle Eastern Man Abaya Robe Islamic Men<span
+                        class="fa fa-star a68a"></span>
+                    <span class="fa fa-star a68a"></span>
+                    <span class="fa fa-star a68a"></span>
+                    <span class="fa fa-star a68a"></span>
+                    <span class="fa fa-star "></span>
+                </div>
+            </div>
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\ono.jpg">
+                <div class="saw">
+                    Stylish Muslim Abaya For Men Adults Button Accent Thobe Fashion Modern<span
+                        class="fa fa-star a69a"></span>
+                    <span class="fa fa-star a69a"></span>
+                    <span class="fa fa-star a69a"></span>
+                    <span class="fa fa-star a69a"></span>
+                    <span class="fa fa-star a69a"></span>
+                </div>
+            </div>
+
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\oho.webp">
+                <div class="saw">
+
+                    Alibaba
+                    Latest Online Abaya High Quality Oem Middle Eastern Arab Robe For Men <span
+                        class="fa fa-star a70a"></span>
+                    <span class="fa fa-star a70a"></span>
+                    <span class="fa fa-star a70a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\oyo.png">
+                <div class="saw">
+
+
+                    Alibaba
+                    China Best Selling Islamic Clothing Men Hooded Thobe Dubai Arabic Thobe<span
+                        class="fa fa-star a71a"></span>
+                    <span class="fa fa-star a71a"></span>
+                    <span class="fa fa-star a71a"></span>
+                    <span class="fa fa-star a71a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\oao.png">
+                <div class="saw">
+
+                    Limanying supply factory price Hot sale muslim dubai qatar islamic men thobe mens abayas<span
+                        class="fa fa-star a72a"></span>
+                    <span class="fa fa-star a72a"></span>
+                    <span class="fa fa-star a72a"></span>
+                    <span class="fa fa-star a72a"></span>
+                    <span class="fa fa-star a72a"></span>
+                </div>
+            </div>
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\ofo.jpg">
+                <div class="saw">
+
+                    New Design Muslim Abaya Islamic Men's Thobe Or Thawb Urban Mens Thawb<span
+                        class="fa fa-star a73a"></span>
+                    <span class="fa fa-star a73a"></span>
+                    <span class="fa fa-star a73a"></span>
+                    <span class="fa fa-star a73a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\omo.jpg">
+                <div class="saw">
+
+                    Muslim men Baju kebaya and qatar men arab thobe with white color <span
+                        class="fa fa-star a74a"></span>
+                    <span class="fa fa-star a74a"></span>
+                    <span class="fa fa-star a74a"></span>
+                    <span class="fa fa-star a74a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="maw">
+                <img src="./media/nourhanfouad_media\oso.jpg">
+                <div class="saw">
+
+                    solid color dubai abaya 2022 thobe muslin men's, daffah thobe <span class="fa fa-star a75a"></span>
+                    <span class="fa fa-star a75a"></span>
+                    <span class="fa fa-star a75a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="low">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زلرار موقع العبابات -->
+        <div id="sow">
+            <button id="law" onclick=" document.location='https://www.alibaba.com/'">ALIBABA</button>
+        </div>
+    </div>
+    <hr>
+    </div>
+
+
+
+
+
+    <div class="b1">
+        <!-- قسم ملالس الاطفال -->
+        <h3 id="b2"> BOYS' NEW ARRIVALS </h3>
+        <div class="b3">
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nio.webp">
+                <div class="b5">
+                    Boys' tie-dyed sweatshirt<span class="fa fa-star a76a"></span>
+                    <span class="fa fa-star a76a"></span>
+                    <span class="fa fa-star a76a"></span>
+                    <span class="fa fa-star a76a"></span>
+                    <span class="fa fa-star"></span>
+
+
+                </div>
+            </div>
+
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nbo.webp">
+                <div class="b5">Kids' short-sleeve cotton-linen camp shirt<span class="fa fa-star a77a"></span>
+                    <span class="fa fa-star a77a"></span>
+                    <span class="fa fa-star a77a"></span>
+                    <span class="fa fa-star a77a"></span>
+                    <span class="fa fa-star a77a"></span>
+
+
+                </div>
+            </div>
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nuo.webp">
+                <div class="b5">Boys' garment-dyed cotton-linen chino suit jacket<span class="fa fa-star a78a"></span>
+                    <span class="fa fa-star a78a"></span>
+                    <span class="fa fa-star a78a"></span>
+                    <span class="fa fa-star a78a"></span>
+                    <span class="fa fa-star"></span>
+
+
+
+                </div>
+            </div>
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nxo.webp">
+                <div class="b5">boys Boys' short-sleeve polo shirt in rugby stripe<span class="fa fa-star a79a"></span>
+                    <span class="fa fa-star a79a"></span>
+                    <span class="fa fa-star a79a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nmo.webp">
+                <div class="b5">
+                    Kids' short-sleeve garment-dyed polo shirt<span class="fa fa-star a80a"></span>
+                    <span class="fa fa-star a80a"></span>
+                    <span class="fa fa-star a80a"></span>
+                    <span class="fa fa-star a80a"></span>
+                    <span class="fa fa-star a80a"></span>
+
+                </div>
+            </div>
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nwo.webp">
+                <div class="b5">Boys' relaxed-fit pull-on short in chino<span class="fa fa-star a81a"></span>
+                    <span class="fa fa-star a81a"></span>
+                    <span class="fa fa-star a81a"></span>
+                    <span class="fa fa-star a81a"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nqo.webp">
+                <div class="b5">
+                    Boys' Ludlow jacket in chambray<span class="fa fa-star a82a"></span>
+                    <span class="fa fa-star a82a"></span>
+                    <span class="fa fa-star a82a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="b4">
+                <img src="./media/nourhanfouad_media\nvo.png">
+                <div class="b5">
+                    BABY CLOTHES GIFT SET, J CREW BABY<span class="fa fa-star a83a"></span>
+                    <span class="fa fa-star a83a"></span>
+                    <span class="fa fa-star a83a"></span>
+                    <span class="fa fa-star a83a"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+
+            </div>
+
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="b6">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زرار موقع ملابس الاطفال -->
+        <div id="b7">
+            <button id="b8"
+                onclick=" document.location='https://www.jcrew.com/eg/plp/boys/features/new-arrivals?intcmp=kids_2_oneup_1_new?intcmp=kids_2_oneup_1_new'">J-CREW</button>
+        </div>
+    </div>
+    <hr>
+    </div>
+
+    <!-- قسم الملابس الر ياضيه -->
+
+    <div class="a1">
+
+        <h3 id="a2">DIFFERENT IN SPORTS CLOTHES STYLE FROM ADIDAS</h3>
+        <div class="a3">
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\bda.jpeg">
+                <div class="a5"> COLD.RDY TECHFIT LONG TIGHTS<span class="fa fa-star a84a"></span>
+                    <span class="fa fa-star a84a"></span>
+                    <span class="fa fa-star a84a"></span>
+                    <span class="fa fa-star a84a"></span>
+                    <span class="fa fa-star"></span>
+
+
+                </div>
+            </div>
+
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\blo.webp">
+                <div class="a5">ADICOLOR CLASSICS LOCK-UP TREFOIL TRACK TOP<span class="fa fa-star a85a"></span>
+                    <span class="fa fa-star a85a"></span>
+                    <span class="fa fa-star a85a"></span>
+                    <span class="fa fa-star a85a"></span>
+                    <span class="fa fa-star"></span>
+
+
+                </div>
+            </div>
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\bao.webp">
+                <div class="a5">
+                    OWN THE RUN LONG SLEEVE TEE<span class="fa fa-star a86a"></span>
+                    <span class="fa fa-star a86a"></span>
+                    <span class="fa fa-star a86a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+
+                </div>
+            </div>
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\bno.webp">
+                <div class="a5">PRIMEGREEN ESSENTIALS WARM-UP TAPERED 3-STRIPES CAMO TRACK PANTS<span
+                        class="fa fa-star a87a"></span>
+                    <span class="fa fa-star a87a"></span>
+                    <span class="fa fa-star a87a"></span>
+                    <span class="fa fa-star a87a"></span>
+                    <span class="fa fa-star a87a"></span>
+                </div>
+            </div>
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\bzo.webp">
+                <div class="a5">HYPERPULSE SHORTS<span class="fa fa-star a88a"></span>
+                    <span class="fa fa-star a88a"></span>
+                    <span class="fa fa-star a88a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\bmo.webp">
+                <div class="a5">TIRO 21 TRACK JACKET<span class="fa fa-star a89a"></span>
+                    <span class="fa fa-star a89a"></span>
+                    <span class="fa fa-star a89a"></span>
+                    <span class="fa fa-star a89a"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\bio.webp">
+                <div class="a5">ADICOLOR ESSENTIALS TREFOIL SWIM SHORTS<span class="fa fa-star a90a"></span>
+                    <span class="fa fa-star a90a"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="a4">
+                <img src="./media/nourhanfouad_media\bgo.webp">
+                <div class="a5">ARSENAL 21/22 HOME JERSEY<span class="fa fa-star a91a"></span>
+                    <span class="fa fa-star a91a"></span>
+                    <span class="fa fa-star a91a"></span>
+                    <span class="fa fa-star a91a"></span>
+                    <span class="fa fa-star a91a"></span>
+
+                </div>
+
+            </div>
+
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="a6">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زرار الملابس الرياضيه -->
+        <div id="a7">
+            <button id="a8" onclick=" document.location='https://www.adidas.com/us/men'">Adidas</button>
+        </div>
+    </div>
+    <hr>
+    </div>
+    <!-- قسم الهدوم الداخليه -->
+    <div class="sos">
+
+        <h3 id="non">DIFFERENT IN UNDERWEAR AND SOCKS STYLES FROM EMPRATOR</h3>
+        <div class="aaa">
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\yqm.jpg">
+                <div class="ggg">Embrator Pack Of 3 Boxer For Men Colours May Vary<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\yamm.jpg">
+                <div class="ggg">
+
+                    Cottonil Bundle Of Three Full Sleeves Men Undershirts<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\yom.webp">
+                <div class="ggg">
+
+                    Embrator Multi Color Underwear Vests For Men price from souq in Egypt<span
+                        class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+
+                </div>
+            </div>
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\yum.jpg">
+                <div class="ggg">Embrator Thermal Underwear For Mens..<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\ytm.jpg">
+                <div class="ggg">Embrator Strappy Undershirt Stretch Cotton<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\yhm.jpg">
+                <div class="ggg">Mesery Bundle Of (2) Round Neck - For Men<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+            </div>
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\yhn.jpg">
+                <div class="ggg">
+
+                    HIGH SOCET SOCKS B BY EMBRATOR | Socks<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="eee">
+                <img src="./media/nourhanfouad_media\yhh.webp">
+                <div class="ggg"> HIGH SOCET SOCKS B BY EMBRATOR |Grey Melange<span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+                    <span class="fa fa-star a32a"></span>
+
+                </div>
+            </div>
+
+        </div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="lel">IF YOU WANT TO SEE MORE WITH DETAILS CLICK HERE</h3>
+        <!-- زرار الملابس الداخليه -->
+        <div id="nan">
+            <button id="hah" onclick=" document.location='https://embrator-eg.com/ar'">EMBRATOR</button>
+        </div>
+    </div>
+    <hr>
+    </div>
+    <!-- الفوتر -->
+    <footer class="section-p1">
+        <div class="col">
+            <h1>HNY</h1>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>30 Salah Street, Masr El Gdida</p>
+            <p><strong>Phone:</strong>01025964102 / 01125478851</p>
+            <p><strong>Hours:</strong>10:00 AM - 12:00 PM, all week</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instgram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Services</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col">
+            <h4>Quik Links</h4>
+            <a href="#">Home</a>
+            <a href="#">Shopping</a>
+            <a href="#">Food Court</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Beauty</a>
+            <a href="#">Electronics</a>
+            <a href="#">Books</a>
+        </div>
+
+        <div class="copyright">
+            <p>DESIGNED & DEVELOPED BY ENG/NOURHAN MAGDY</p>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+<script>
+
+
+    const bar = document.getElementById('bar');
+    const close = document.getElementById('close');
+    const nav = document.getElementById('navbar');
+
+    if (bar) {
+        bar.addEventListener('click', () => {
+            nav.classList.add('active');
+        })
+    }
+    // ال نيف بار
+    if (close) {
+        close.addEventListener('click', () => {
+            nav.classList.remove('active');
+        })
+    } var slide_index = 1;
+    displaySlides(slide_index);
+
+    function nextSlide(n) {
+        displaySlides(slide_index += n);
+    }
+
+    function currentSlide(n) {
+        displaySlides(slide_index = n);
+    }
+    // السلايدر
+    function displaySlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("showSlide");
+        if (n > slides.length) { slide_index = 1 }
+        if (n < 1) { slide_index = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slide_index - 1].style.display = "block";
+    }
+
+</script>
+
+</html>
