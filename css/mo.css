@@ -1,0 +1,1091 @@
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/*header start*/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    padding: 15px;
+    /*new*/
+    display: block;
+    /*new*/
+}
+
+#navbar li ul {
+    /*new*/
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #E3E6F3;
+    display: none;
+}
+
+#navbar li ul li {
+    /*new*/
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+#navbar li:focus-within>ul,
+/*new*/
+#navbar li:hover>ul {
+    display: initial;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* شكل الويب سايت */
+body {
+    margin: 0;
+    background: #e6e6e6;
+}
+
+/* السلايدر */
+.showSlide {
+    display: none
+}
+
+.showSlide img {
+    width: 100%;
+    height: 600px;
+}
+
+.slidercontainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* الاشاارات ف الاسلايدر */
+.left,
+.right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgba(0, 0, 0, 0.998);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.left:hover,
+.right:hover {
+    background-color: rgba(66, 175, 215, 0.8);
+}
+
+.mass {
+    color: #03392f;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: justify;
+    text-shadow: 1px 1px #88e0db;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* الصور ال تعريفيه ال ف محتوي الصفحه */
+#con {
+    text-align: center;
+    color: #032;
+    text-shadow: 1px 1px #a2f2ee;
+
+}
+
+.thes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clo img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+.clo img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+
+.clo img:hover {
+    border-radius: 20px;
+    transform: scaleX(-1);
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.textt {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+/* وازاي اغير ف مقاسهم و الكتابه بتاعتم اول جروب للصور بتاع البدل  */
+.group {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px;
+    column-gap: 45px;
+    row-gap: 90px;
+    width: 1200px;
+    height: 680px;
+    justify-content: center;
+}
+
+#sn {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+.hey img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.hey img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.hey img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.cont {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#kkkk {
+    text-align: right;
+    color: #273103;
+
+}
+
+#ssss {
+    text-align: right;
+}
+
+#ghg {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#ghg:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+
+}
+
+/* جروب التيشيرتات و القمصان و خصايصهم و كلامهم */
+.multi {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px;
+    column-gap: 45px;
+    row-gap: 100px;
+    width: 1200px;
+    height: 680px;
+    justify-content: center;
+}
+
+#pq {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+.hello img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.hello img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.hello img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.sep {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#nnn {
+    text-align: right;
+    color: #273103;
+
+}
+
+#shsh {
+    text-align: right;
+}
+
+#pup {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#pup:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+
+}
+
+/* جروب صور ال جواه البناطيل و كلامهم و تنظيمهم */
+.many {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px;
+    column-gap: 45px;
+    row-gap: 100px;
+    width: 1200px;
+    height: 680px;
+    justify-content: center;
+}
+
+#qp {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+.wel img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.wel img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.wel img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.tem {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#sss {
+    text-align: right;
+    color: #273103;
+
+}
+
+#ooh {
+    text-align: right;
+}
+
+#pew {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#pew:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+
+}
+
+/* و تنظيمهم و كلامهم . جروب السويتشيرتات و الجواكت و البلوفلارات */
+.you {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
+    column-gap: 45px;
+    row-gap: 100px;
+    width: 1200px;
+    height: 1100px;
+    justify-content: center;
+}
+
+#yes {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+.noo img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.noo img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.noo img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.loo {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#soo {
+    text-align: right;
+    color: #273103;
+
+}
+
+#mee {
+    text-align: right;
+}
+
+#new {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#new:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+
+}
+
+/* قسم العبايات و تنظيمهم و كلامهم */
+
+.cow {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px;
+    column-gap: 45px;
+    row-gap: 100px;
+    width: 1200px;
+    height: 720px;
+    justify-content: center;
+}
+
+#now {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+.maw img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.maw img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.maw img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.saw {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#low {
+    text-align: right;
+    color: #273103;
+
+}
+
+#sow {
+    text-align: right;
+}
+
+#law {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#law:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+/* ملابس اطفالي ولادي  */
+}.b3 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
+    column-gap: 45px;
+    row-gap: 100px;
+    width: 1200px;
+    height: 720px;
+    justify-content: center;
+}
+
+.b4 img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.b4 img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.b4 img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.b5 {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#b6 {
+    text-align: right;
+    color: #273103;
+
+}
+
+#b2 {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+#b8 {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#b8:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+
+}
+
+#b7 {
+    text-align: right;
+}
+
+/* الملابس الرياضيه */
+
+/* تنظيم الملابس الرياضيه  */
+.a3 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
+    column-gap: 45px;
+    row-gap: 100px;
+    width: 1200px;
+    height: 720px;
+    justify-content: center;
+}
+
+.a4 img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.a4 img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.a4 img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.a5 {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#a6 {
+    text-align: right;
+    color: #273103;
+
+}
+
+#a2 {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+#a8 {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#a8:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+
+}
+
+#a7 {
+    text-align: right;
+}
+
+/* الملابس الداخليه و تنظيمهم و كلامهم  */
+.aaa {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
+    column-gap: 45px;
+    row-gap: 100px;
+    width: 1200px;
+    height: 720px;
+    justify-content: center;
+}
+
+.eee img {
+    width: 200px;
+    height: 300px;
+    transition: all .5s linear;
+}
+
+.eee img {
+    margin-bottom: 10px;
+    margin-bottom: color #71ebd9;
+
+}
+
+.eee img:hover {
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px rgba(2, 69, 94, 0.5);
+
+
+}
+
+.ggg {
+    text-align: center;
+    color: #021e1ae3;
+}
+
+#lel {
+    text-align: right;
+    color: #273103;
+
+}
+
+#non {
+    text-align: left;
+    color: #032146e3;
+
+}
+
+#hah {
+    border: 1px solid rgb(97, 59, 59);
+    padding: 15px;
+    color: #fff;
+    background-color: #052a28;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+#hah:hover {
+    border: 1px solid rgb(240, 126, 126);
+    padding: 15px;
+    color: black;
+    background-color: #c2edeb;
+    border-radius: 5px;
+
+}
+
+#nan {
+    text-align: right;
+}
+
+
+
+
+/* نجوم التقييم من 32 لحد91 كل صوره ب كلاس غير التاني غير اخر 8 بنفس كلاس 32 */
+.a32a {
+    color: orange;
+}
+
+.a33a {
+    color: orange;
+}
+
+.a34a {
+    color: orange;
+}
+
+.a35a {
+    color: orange;
+}
+
+.a36a {
+    color: orange;
+}
+
+.a37a {
+    color: orange;
+}
+
+.a38a {
+    color: orange;
+}
+
+.a39a {
+    color: orange;
+}
+
+.a40a {
+    color: orange;
+}
+
+.a41a {
+    color: orange;
+}
+
+.a42a {
+    color: orange;
+}
+
+.a43a {
+    color: orange;
+}
+
+.a44a {
+    color: orange;
+}
+
+.a45a {
+    color: orange;
+}
+
+.a46a {
+    color: orange;
+}
+
+.a47a {
+    color: orange;
+}
+
+.a48a {
+    color: orange;
+}
+
+.a49a {
+    color: orange;
+}
+
+.a50a {
+    color: orange;
+}
+
+.a51a {
+    color: orange;
+}
+
+.a52a {
+    color: orange;
+}
+
+.a53a {
+    color: orange;
+}
+
+.a54a {
+    color: orange;
+}
+
+.a55a {
+    color: orange;
+}
+
+.a56a {
+    color: orange;
+}
+
+.a57a {
+    color: orange;
+}
+
+.a58a {
+    color: orange;
+}
+
+.a59a {
+    color: orange;
+}
+
+.a60a {
+    color: orange;
+}
+
+.a61a {
+    color: orange;
+}
+
+.a62a {
+    color: orange;
+}
+
+.a63a {
+    color: orange;
+}
+
+.a64a {
+    color: orange;
+}
+
+.a65a {
+    color: orange;
+}
+
+.a66a {
+    color: orange;
+}
+
+.a67a {
+    color: orange;
+}
+
+.a68a {
+    color: orange;
+}
+
+.a69a {
+    color: orange;
+}
+
+.a70a {
+    color: orange;
+}
+
+.a71a {
+    color: orange;
+}
+
+.a72a {
+    color: orange;
+}
+
+.a73a {
+    color: orange;
+}
+
+.a74a {
+    color: orange;
+}
+
+.a75a {
+    color: orange;
+}
+
+.a76a {
+    color: orange;
+}
+
+.a77a {
+    color: orange;
+}
+
+.a78a {
+    color: orange;
+}
+
+.a79a {
+    color: orange;
+}
+
+.a80a {
+    color: orange;
+}
+
+.a81a {
+    color: orange;
+}
+
+.a82a {
+    color: orange;
+}
+
+.a83a {
+    color: orange;
+}
+
+.a84a {
+    color: orange;
+}
+
+.a85a {
+    color: orange;
+}
+
+.a86a {
+    color: orange;
+}
+
+.a87a {
+    color: orange;
+}
+
+.a88a {
+    color: orange;
+}
+
+.a89a {
+    color: orange;
+}
+
+.a90a {
+    color: orange;
+}
+
+.a91a {
+    color: orange;
+}
+/* الفوتر */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E3E6F3;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:477px) {
+
+    .section-p1 {
+        padding: 20px;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
+
+}

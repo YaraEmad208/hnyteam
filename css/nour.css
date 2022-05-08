@@ -1,0 +1,627 @@
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    padding: 15px;
+
+    display: block;
+
+}
+
+#navbar li ul {
+
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #E3E6F3;
+    display: none;
+}
+
+#navbar li ul li {
+
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+    position: relative;
+    right: 15px;
+}
+
+#navbar li:focus-within>ul,
+
+#navbar li:hover>ul {
+    display: initial;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+@media (max-width:799px) {
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    #navbar li ul li {
+        background: #E3E6F3;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #hero {
+
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+
+   
+
+    
+
+    
+
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#E3E6F3;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+
+
+
+
+@media  (max-width:477px) {
+
+    .section-p1{
+        padding: 20px;
+    }
+
+     
+ }
+
+
+
+body {
+
+    background-image:url(no.jpg)  ;
+    background-attachment: fixed;
+    direction: ltr;
+    text-transform: initial;
+
+
+}
+
+.Hair,
+.Hair1,
+.Hair2,
+.Hair3,
+.Hair4,
+.Hair5,
+.Hair6,
+.Hair7,
+.Hair8,
+.Hair9,
+.Hair00,
+.Hair11,
+.Hair22,
+.Hair33,
+.Hair44,
+.Hair55,
+.Hair66,
+.Hair77,
+.Hair88,
+.Hair99 {
+    
+    width: 210px;
+    height: 310px;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: rgb(34, 14, 14);
+    margin: 10px;
+    padding: 3px;
+    transition:all .5s linear;
+    cursor:pointer;
+}
+
+
+  .koka{
+    color: rgb(20, 149, 255);
+    font-family: Cambria, CocHin, Georgia, Times, 'Times New Roman', serif;
+    font-size:xx-large;
+    transition: all .8s linear;
+    text-indent: 12px;
+  }
+   
+  
+
+
+ 
+ .tem{
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+    
+ }
+
+ .vedio,.ifram{
+   height: 800px ;
+   width: 1020px;
+   margin: 30px;
+   position: center;
+  
+ }
+ .i{
+     padding:10px;
+     margin: 10px;
+     
+     border-radius: 50px;
+     
+ }
+
+ .Hair:hover{
+     width: 260px;
+     height: 360px;
+     border-color: rgb(201, 125, 154);
+     border-style: solid;
+     border-radius: 85px;
+ }
+ .Hair1:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(187, 29, 89);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair2:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(147, 62, 204);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair3:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(128, 7, 228);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair4:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(173, 110, 134);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair5:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(135, 130, 206);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair6:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(47, 201, 201);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair7:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(196, 148, 166);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair8:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(163, 58, 98);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair9:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(40, 207, 199);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair00:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(192, 153, 202);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair11:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(128, 180, 182);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair22:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(184, 137, 155);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair33:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(184, 83, 121);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair44:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(30, 17, 214);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair55:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(45, 182, 206);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair66:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(136, 80, 101);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair77:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(142, 49, 196);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair88:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(28, 236, 243);
+    border-style: solid;
+    border-radius: 85px;
+}
+.Hair99:hover{
+    width: 260px;
+    height: 360px;
+    border-color: rgb(189, 59, 109);
+    border-style: solid;
+    border-radius: 85px;
+}
+
+.koka:hover{
+    color: rgb(21, 43, 241);
+    font-family:Impact,"my", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:85px ;
+    font-weight: 150;
+
+}
+.tem:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+}
+
+.buy{
+    width: 55px;
+    height: 30px;
+    
+}
+.information{
+    display:none;
+
+}
+
+.non td{
+    border-radius: 5px;
+    color: #1a1a1a;
+    border-color: #e285a9da;
+    border-style: ridge;
+    min-width: 20%;
+    width: auto;
+    background-color: #ebd9e0fa;
+    
+    
+    
+
+}
+.caption{
+    font-size: xx-large;
+    color: #245870;
+    font-style: bold;
+
+}
+
+   .nu td{
+       background-color: #cea6b6fa;
+       font-style: normal;
+       color: #1a1a1a;
+       border-style: double;
+       font-size:larger;
+      
+       border-color:#df93b0da ;
+   }
+
+   .wow1{
+       width: 1300px;
+       margin: 20px;
+       height: 400px;
+   }
+   
+      
+    .non{
+        margin-left: 15px;
+        margin-right: 15px;
+        position: relative;
+       
+        left: 5%;
+    } 
+  
+   .img{
+    display:inline-block;
+   
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+    .try{
+        background-color: #c1c9eb;
+        border-color: #1d3c4b;
+        margin: 10px;
+        width: auto;
+        box-shadow: 07px 15px 3px rgba(0,0,0, 0.06);
+    }
+    .img:hover{
+        box-shadow: 07px 15px 3px rgba(0, 0, 0, 0.281);
+    }
+    .link{
+        border-width: 4px;
+        text-decoration: none;
+        background-color: #aa87d6;
+        padding: 5px 10px ;
+        color:#262747da ;
+        border-radius: 5px;
+        box-shadow: 05px 10px 6px rgba(29, 28, 28, 0.4);
+      
+        
+
+    }
+    .momomo1{
+        width: 100%;
+        height: 380px;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+     }
+     .click{
+        margin-left: 20%;
+        border-color:#395363da  ;
+        border-radius: 6px;
+        box-shadow: 05px 10px 6px rgba(17, 8, 68, 0.788);
+  
+    }
+    #pay1{
+        
+        margin-left:15% ;
+        border-color:#2f3b53fa;
+        border-radius: 7px;
+        border-style: double;
+        box-shadow: 05px 10px 9px rgba(44, 82, 163, 0.815);
+        display:none;
+        background-color: #90bbb9;
+        
+    }
+    
+    #pay2{
+        
+      margin-left:10%;
+      border-color:#2f3b53fa;
+      border-radius: 7px;
+      border-style: double;
+      box-shadow: 05px 10px 9px rgba(44, 82, 163, 0.815);
+      display:inline;   
+      background-color: #90bbb9; 
+     
+      
+  }
+  .input{
+      background-color: #98b0c7;
+      margin-left:15% ;
+      box-shadow: 05px 10px 9px rgba(97, 83, 158, 0.815);
+      margin-top: 2%;
+      
+      
+  
+  }
+  .send{
+      margin-left: 10%;
+      box-shadow:5px 7px 9px rgba(27, 5, 104, 0.815);
+      background-color: #3987a7;
+  
+  
+  }
+  
+     
+

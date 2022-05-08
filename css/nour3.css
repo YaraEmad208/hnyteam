@@ -1,0 +1,427 @@
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+/*header start*/
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 05px 15px rgba(0,0,0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px ;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    padding: 15px;/*new*/
+    display: block;/*new*/
+}
+
+#navbar li ul{/*new*/
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #E3E6F3;
+    display: none;
+}
+
+#navbar li ul li{/*new*/
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0, 0.02);
+}
+
+#navbar li:focus-within > ul,/*new*/
+#navbar li:hover > ul{
+     display: initial;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display:none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#1abbb3;
+}
+
+footer.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer H4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 008px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer.follow{
+    margin-top: 20px;
+
+}
+
+footer.followi{
+    color: #465b52;
+    padding-rigHt: 4px;
+    cursor: pointer;
+}
+
+footer.followi:Hover,
+footer a:Hover{
+    color: #088178;
+}
+
+footer.copyrigHt{
+    widtH: 100%;
+    text-align: center;
+}
+
+
+
+
+@media  (max-widtH:477px) {
+
+    .section-p1{
+        padding: 20px;
+    }
+
+     footer.copyrigHt{
+         text-align: start;
+     }
+
+ }
+
+
+body {
+
+    background-image:url(koka22.png)  ;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    direction: ltr;
+    text-transform: initial;
+
+
+}
+.Hair000,
+.Hair999,
+.Hair888,
+.Hair444,
+.Hair555,
+.Hair222,
+.Hair111,
+.Hair666,
+.Hair777,
+.Hair333
+
+ {
+    
+    width: 210px;
+    height: 310px;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: rgb(34, 14, 14);
+    margin: 10px;
+    padding: 3px;
+    transition-property:all linear;
+    transition-duration:1s ;
+    cursor:pointer;
+    
+    
+}
+
+.Hair000:hover{
+   
+    border-color: rgb(201, 125, 154);
+    border-style:double;
+    border-radius: 90px;
+    width: 300px;
+    margin-left: 20px;
+    filter: grayscale(100%);
+    
+    
+}
+.Hair111:hover{
+   
+   border-color: rgb(187, 29, 89);
+   border-style: double;
+   border-radius: 90px;
+   width: 300px;
+    margin-left: 20px;
+}
+
+.Hair222:hover{
+  
+   border-color: rgb(147, 62, 204);
+   border-style: double;
+   border-radius: 90px;
+   width: 300px;
+   margin-left: 20px;
+   
+
+}
+
+.Hair333:hover{
+  
+   border-color: rgb(128, 7, 228);
+   border-style:  double;
+   border-radius: 90px;
+   width: 300px;
+   margin-left: 20px;
+   
+}
+
+.Hair444:hover{
+  
+   border-color: rgb(173, 110, 134);
+   border-style:  double;
+   border-radius: 150px;
+   width: 300px;
+   height: 300px;
+
+   
+}
+
+.Hair555:hover{
+  
+   border-color: rgb(135, 130, 206);
+   border-style:  double;
+   border-radius: 150px;
+   width: 300px;
+   height: 300px;
+   
+  
+}
+
+.Hair666:hover{
+  
+   border-color: rgb(47, 201, 201);
+   border-style:  double;
+   border-radius: 150px;
+   width: 300px;
+   height: 300px;
+  
+   
+}
+
+.Hair777:hover{
+  
+   border-color: rgb(196, 148, 166);
+   border-style:  double;
+   border-radius: 150px;
+   width: 300px;
+   height: 300px;
+   
+   
+
+}
+.Hair888:hover{
+  
+   border-color: rgb(163, 58, 98);
+   border-style: double ;
+   border-radius: 150px;
+   width: 300px;
+   height: 300px;
+   
+   
+}
+
+.Hair999:hover{
+  
+   border-color: rgb(40, 207, 199);
+   border-style:  double;
+   border-radius: 150px;
+   width: 300px;
+   height: 300px;
+   
+}
+
+
+.tem3{
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+    
+}
+    
+ 
+.tem3:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+}
+ .i3{
+    padding:10px;
+    margin: 10px;
+}
+
+.buy3{
+    width: 55px;
+    height: 30px;
+    
+}
+.non3 td{
+    border-radius: 5px;
+    color: #1a1a1a;
+    border-color: #e285a9da;
+    border-style: ridge;
+    min-width: 20%;
+    width: auto;
+    background-color: #ebd9e0fa;
+    
+    
+}
+.caption3{
+    font-size: xx-large;
+    color: #245870;
+    font-style: bold;
+
+}
+.nu3 td{
+    background-color: #cea6b6fa;
+    font-style: normal;
+    color: #1a1a1a;
+    border-style: double;
+    font-size:larger;
+   
+    border-color:#df93b0da ;
+}
+.wow3{
+    width: 1300px;
+    margin: 20px;
+    height: 400px;
+}
+.non3{
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+   
+    left: 5%;
+} 
+
+.img3{
+display:inline-block;
+display:inline-flexbox;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+max-width:400px ;
+max-height: 400px;
+flex-wrap: wrap;
+
+}
+.koka3{
+    background-image:linear-gradient(to right,rgb(224, 159, 190),#c55781,rgb(236, 208, 222)) ;
+    border-radius: 80px;
+    width: 220px;
+    height: 110px;
+    border-style: double;
+    top:10px;
+    font-family: Cambria, CocHin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(72, 17, 83);
+    transition: all .8s linear;
+    border-color: #c55781;
+    font-size: xx-large;
+    padding-left: 25px;
+    padding-top: 20px;
+    margin-left: 25px;
+   
+
+}
+
+.koka3:hover{
+    color: rgb(34, 7, 23);
+    font-family:Impact,"my", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px ;
+    font-weight: 150;
+    box-shadow: 05px 15px  9px rgba(139, 100, 120, 0.993);
+    border-style:inherit;
+    background-image: linear-gradient(to right,rgb(216, 159, 224),#af57c5,rgb(201, 84, 185));
+}
+.momomo3{
+    width: 100%;
+    height: 380px;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+ }
+ 
+
+

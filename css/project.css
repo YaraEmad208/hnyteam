@@ -1,0 +1,902 @@
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*header start*/
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    padding: 15px;
+    /*new*/
+    display: block;
+    /*new*/
+}
+
+#navbar li ul {
+    /*new*/
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #E3E6F3;
+    display: none;
+}
+
+#navbar li ul li {
+    /*new*/
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+    position: relative;
+    right: 15px;
+}
+
+#navbar li:focus-within>ul,
+/*new*/
+#navbar li:hover>ul {
+    display: initial;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+@media (max-width:799px) {
+
+    .section-p1{
+       padding: 40px 40px;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0, 0.01);
+        padding: 80px 0 0 10px ;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #navbar li ul{/*new*/
+         position: relative;
+         width: 100%;
+    }
+
+    #navbar li ul li{/*new*/
+        background: #E3E6F3;
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left:20px ;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #hero{
+         
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+        
+    }
+
+    #product1 .pro-container{
+        justify-content:center;
+    }
+
+    #product1 .pro{
+        margin: 15px;
+    }
+
+    #newsletter .form{
+        width: 70%;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/*market hana*/
+
+.hana2 {
+    font-size: 60px;
+    padding-left: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20spx;
+    color: blue;
+    display: inline-flex;
+
+}
+
+.non {
+    text-align: center;
+    color: rgb(101, 101, 134);
+    background-color: rgb(247, 247, 247);
+    padding: 15px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.hna {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.hhh {
+    color: navy;
+    font-size: 45px;
+}
+
+.bodyy {
+    background-color: #DDD;
+
+}
+
+/*SLISER */
+.slider
+
+/*div*/
+    {
+    width: 500px;
+    margin: auto;
+    overflow: hidden;
+    /* عشان ميظهرش حاجة برا ال 500 px*/
+
+}
+
+.list1
+
+/* ul */
+    {
+    width: 2500px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* بتحررك  */
+    animation: sliding 10s ease-in-out infinite
+        /*هيشتغل*/
+}
+
+.listt
+
+/*il*/
+    {
+
+    float: left;
+    position: relative;
+}
+
+
+.hedding
+
+/*h3*/
+    {
+    margin: 0;
+    background: rgb(29, 40, 88);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes sliding {
+
+    5%,
+    20% {
+        left: 0
+    }
+
+    25%,
+    40% {
+        left: -500px;
+    }
+
+    45%,
+    60% {
+        left: -1000px;
+    }
+
+    65%,
+    80% {
+        left: -1500px;
+    }
+
+    85%,
+    100% {
+        left: -2000px;
+    }
+}
+
+/*video market hana*/
+.para1 {
+
+    color: rgb(26, 17, 77);
+    text-align: center;
+    font-size: 65px;
+}
+
+.vidmarket {
+    width: l000px;
+    height: 600px;
+    margin: auto;
+    padding-left: 25%;
+
+}
+
+
+
+#icons1 {
+    width: 80px;
+    display: flex;
+
+    margin-top: 15px;
+}
+
+#icons1 img {
+    width: 80px;
+    background-color: navy;
+}
+
+.tablehana {
+    /* th td*/
+    border: solid navy;
+    padding: 0.5rem;
+    font-size: 35px;
+}
+
+.hana1 {
+    /*table*/
+    border: 1px solid navy;
+    border-collapse: collapse;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+
+.cap {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 14px;
+    color: #fff;
+    background-color: navy;
+}
+
+#sm {
+    background-color: navy;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.link {
+    color: #fff;
+
+}
+
+/*page2 hana*/
+
+/* starting */
+.start1 {
+    background-color: #d6a289;
+}
+
+.starting1 {
+    width: 780px;
+    height: 550px;
+}
+
+.start2 {
+    max-width: 1366px;
+    height: 100vh;
+    /* حجم الشاشة كلها 100 vh*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.start2 .start3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.h111 {
+
+    color: rgb(160, 45, 30);
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-left: -20px;
+}
+
+
+.start3 p {
+    color: rgb(105, 27, 16);
+    font-size: 25px;
+
+}
+
+.start3 p span {
+    color: rgb(255, 255, 255);
+
+}
+
+.btn {
+    width: 200px;
+    margin-top: 100px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(105, 27, 16);
+
+}
+
+.btn:hover {
+    border: solid white;
+    background-color: rgb(136, 32, 32);
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+/*mac hana*/
+.mac1 {
+    color: rgb(105, 25, 18);
+    font-size: 55px;
+    text-align: left;
+    margin-top: auto;
+
+    padding: 20px 100px 50px 100px;
+}
+
+.mac2 {
+    color: rgb(105, 25, 18);
+    font-size: 30px;
+    background-color: #fff;
+    text-align: center;
+    padding: auto;
+
+}
+
+.sliderff
+
+/*div*/
+    {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+    /* عشان ميظهرش حاجة برا ال 1000 px*/
+
+}
+
+.list1ff
+
+/* ul */
+    {
+    width: 5000px;
+    height: 3000px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* بتحررك  */
+    animation: slidingff 10s ease-in-out infinite
+        /*هيشتغل*/
+}
+
+.listtff
+
+/*il*/
+    {
+
+    float: left;
+    position: relative;
+}
+
+
+.heddingff
+
+/*h3*/
+    {
+    margin: 0;
+    background: rgb(105, 25, 18);
+    padding: 2px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes slidingff {
+
+    5%,
+    20% {
+        left: 0
+    }
+
+    25%,
+    40% {
+        left: -1000px;
+    }
+
+    45%,
+    60% {
+        left: -2000px;
+    }
+
+    65%,
+    80% {
+        left: -3000px;
+    }
+
+    85%,
+    100% {
+        left: -4000px;
+    }
+}
+
+
+.bground {
+
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1200;
+    background-position: top center;
+    padding: 100px 100px 100px 100px;
+
+
+}
+
+.logomac {
+    padding: 5px 10px 10px 10px;
+}
+
+#icons2 {
+
+    width: 80px;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.hmac {
+    font-size: 30px;
+    color: rgb(105, 25, 18);
+}
+
+#icons2 img {
+    width: 80px;
+    background-color: rgb(105, 30, 30);
+    padding: 3px;
+}
+
+.alo {
+    color: rgb(105, 27, 16);
+    font-size: 34px;
+    text-align: center;
+}
+
+.vidmac {
+
+
+    width: l000px;
+    height: 600px;
+    margin: auto;
+    padding-left: 15%;
+    display: inline;
+    
+  
+}
+
+.para2 {
+
+    color: rgb(250, 249, 255);
+    background-color: rgb(105, 25, 18);
+    text-align: center;
+    font-size: 45px;
+}
+
+.adve {
+    width: 250px;
+    height: 290px;
+    display: block;
+
+}
+
+/*bazooka hana*/
+
+.bazooka {
+    background-color: rgb(54, 52, 52);
+}
+
+
+.logopizza {
+    padding: 30px 30px 30px 30px;
+}
+
+#icons3 {
+    width: 80px;
+    display: flex;
+    margin-top: 15px;
+}
+
+#icons3 img {
+    width: 80px;
+    background-color: yellow;
+    padding: 5px;
+}
+
+.logobazoka {
+    padding: 20px 20px 20px 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.tit {
+    font-size: 60px;
+    color: yellow;
+    padding-left: 220px;
+}
+
+.texth {
+    font-size: 35px;
+    color: yellow;
+    text-align: center;
+}
+
+.headerbazoka {
+    width: 100%;
+    height: 1200px;
+    background-repeat: no-repeat;
+}
+
+.vidbazoka {
+
+    width: l000px;
+    height: 600px;
+    margin-top: 20px;
+    padding-left: 20%;
+}
+
+.fivemenus img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.fivemenus {
+    display: flex;
+}
+
+.bazookaa {
+    color: yellow;
+
+}
+
+.audiobazoka {
+    color: yellow;
+    font-size: 30px;
+    text-align: left
+}
+
+.discription {
+    background-color: yellow;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.pizzahut {
+    background-color: rgb(255, 255, 255)
+}
+
+.pizzahut .hpizza img {
+    width: 220px;
+    height: 220px;
+}
+
+.pizza2 {
+    display: flex;
+    width: 280px;
+    height: 280px;
+
+
+}
+
+.pad {
+    padding: 10px 10px 10px 10px;
+     margin: 10px 10px 10px 10px;
+    padding-left: 30%;
+
+}
+
+
+/*pizza hut hana*/
+.tit2 {
+    color: rgb(189, 10, 10);
+    font-size: 50px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+}
+
+.disc {
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    padding-left: 130px;
+}
+
+.phut {
+    color: rgb(167, 36, 4);
+    text-align: center;
+    background-color: rgb(255, 238, 0);
+    font-size: 34px;
+}
+
+.phut2 {
+    color: rgb(167, 36, 4);
+    text-align: center;
+    background-color: rgb(255, 238, 0);
+    font-size: 34px;
+}
+
+.gmall {
+    color: rgb(26, 80, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.kkkk {
+    color: rgb(167, 36, 4);
+    text-decoration: underline;
+}
+
+#icons4 {
+    width: 80px;
+    display: flex;
+    margin-top: 15px;
+}
+
+#icons4 img {
+    width: 80px;
+    background-color: rgb(233, 248, 235);
+    padding: 5px;
+}
+
+.pizzahutt {
+    color: rgb(15, 75, 18);
+    font-size: 40px;
+
+}
+
+.vidpizza {
+
+
+    width: 800px;
+    height: 300px;
+
+    padding-left: 15%;
+    display: inline;
+    padding-left: 20%;
+
+}
+
+.vidpizza2 {
+
+    width: 800px;
+    height: 200px;
+
+    display: inline;
+    padding-right: 20%;
+
+
+}
+
+.adver {
+    width: 800px;
+    height: 200px;
+   margin-left: 25%;
+    margin-right:25%;
+}
+
+/* hardees hana*/
+.hardees1 {
+    background-color: black;
+
+
+
+}
+.tit3{
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+      padding-left: 220px;
+}
+
+
+
+.hard2 {
+    padding: 20px 20px 20px 20px;
+}
+.texttt{
+font-size: 30px; /*<pre>*/
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: left;
+color: #fff;
+padding-left: 80px;
+padding-top: 35px;
+
+
+}
+.nonno{
+    color:red ;
+    background-color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+.hardmenu{
+    width: 100%;
+    height: 500px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top: 7px;
+}
+ .hana18{
+color: rgb(255, 238, 0);
+}
+
+#icons5 {
+    width: 80px;
+    display: flex;
+    margin-top: 15px;
+}
+
+#icons5 img {
+    width: 80px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+.hardeeshh{
+    color: rgb(255, 230, 0);
+    font-size: 40px;
+}
+.hana123{ 
+    font-size: 40px;
+    background-color: #fff;
+    color: red;
+    text-align: center;
+
+}
+.vidhardes {
+
+
+    width: 1600px;
+    height: 800px;
+    margin-top: 80px;
+    padding-left: 20%;
+    padding-right: 20%;
+  
+}
+/*kfc*/
+.kfc1{
+    background-color: #fff;
+}
+.kfchana2{
+    padding: 20px 20px 20px 20px;
+    width: 100px;
+    height:100px;
+    
+
+}
+.tit4{
+    font-size: 55px;
+    color: rgb(189, 48, 48);
+    padding-left: 220px;
+}
