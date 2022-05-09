@@ -1,0 +1,6 @@
+
+window[window["TiktokAnalyticsObject"]].instance("C66GI97EQFRBU5HKGOI0").setAdvancedMatchingAvailableProperties({"email":true,"phone_number":false,"auto_email":false,"auto_phone_number":false});
+window[window["TiktokAnalyticsObject"]].instance("C66GI97EQFRBU5HKGOI0").setPixelInfo && window[window["TiktokAnalyticsObject"]].instance("C66GI97EQFRBU5HKGOI0").setPixelInfo({status: 0, name: "DeFacto EG Pixel 2", advertiserID: "7026312765195223042", setupMode: 1, partner: "", is_onsite: false });
+window[window["TiktokAnalyticsObject"]].setPCMDomain && window[window["TiktokAnalyticsObject"]].setPCMDomain("defacto.com");
+window[window["TiktokAnalyticsObject"]].setPCMConfig && window[window["TiktokAnalyticsObject"]].setPCMConfig([]);
+window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie && window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie(false);
