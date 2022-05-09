@@ -14,13 +14,15 @@ if (close) {
     })
 }
 
- 
-var modal = document.getElementById('id03');
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
+var buyList = document.getElementsByClassName('buy');
+for(let i=0 ; i<buyList.length;i++)
+{
+  buyList[i].addEventListener('click' ,function()
+  {
+    alert('this item was add to your cart successfully ..');
+  }
+  )
+}
 
 
     
