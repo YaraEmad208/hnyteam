@@ -14,11 +14,11 @@ if (close){
     })
 }
 
-var slides=document.querySelector('.slider-items').children;
+var slides1=document.querySelector('.slider-items').children;
 var nextSlide=document.querySelector(".right-slide");
 var prevSlide=document.querySelector(".left-slide");
 var index=0;
-var totalSlides=slides.length;
+var totalSlides=slides1.length;
 
 
 nextSlide.onclick=function () {
@@ -47,7 +47,7 @@ function next(direction){
          }
     }
      for(i=0;i<slides.length;i++){
-         slides[i].classList.remove("active");
+         slides1[i].classList.remove("active");
 
      }
     slides[index].classList.add("active");
