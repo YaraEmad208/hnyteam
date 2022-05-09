@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> HNY Shopping Mall</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+    <section>
+        <div class="imgbx">
+            <img src="./media/mall1.jpg">
+        </div>
+        <div class="contentbx">
+            <div class="formbx">
+                <h2>SignUp</h2>
+                <form action="home.html">
+                    <div class="inputbx">
+                        <span>Fullname</span>
+                        <input type="text" name="username" placeholder="Full Name" required minlength="8">
+                    </div>
+                    <div class="inputbx">
+                        <span>Governorate</span>
+                        <input type="text" list="Governorate"  required >
+                        <datalist id="Governorate">
+                            <option value="cairo"></option>
+                            <option value="alexandria"></option>
+                            <option value="giza"></option>
+                            <option value="Aswan"></option>
+                            <option value="luxor"></option>
+                            <option value="red sea"></option>
+                        </datalist>
+                    </div>
+                    <div class="inputbx">
+                        <span>Username</span>
+                        <input type="text" name="username" placeholder="User Name" required minlength="8">
+                    </div>
+                    <div class="inputbx">
+                        <span>E-mail</span>
+                        <input type="email" name="username" placeholder="E-mail" required >
+                    </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="Password" required minlength="6">
+                    </div>
+                    
+                    <div class="remember">
+                        <label for="re"><input id="re" type="checkbox" name="">I agree to the Terms of User</label>
+                    </div>
+                    <div class="inputbx">
+
+                        <input type="submit" value="Sign up">
+                    </div>
+                    <div class="inputbx">
+                        <p>Already have an account?
+                            <a href="login.html"> Log in</a>
+                        </p>
+
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="./js/yara.js"></script>
+</body>
+
+</html>
