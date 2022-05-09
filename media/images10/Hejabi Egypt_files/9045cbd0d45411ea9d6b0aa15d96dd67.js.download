@@ -1,0 +1,737 @@
+window.TermsAndConditionsCheckbox = function(event) {
+    if (event !== undefined)
+        event.preventDefault();
+
+    if (document.getElementById('effectiveAppsAgreeCB') !== null)
+        return;
+
+    if ("1" === "1") {
+        if (window.EFFECTIVE_APPS_CCP === undefined && 'False' === 'False') {
+            jQuery('body').on('click', window.EFFECTIVE_APPS_JQUERY_CHECKOUT_BUTTON_SELECTORS, function() {
+                window.EFFECTIVE_APPS_CCP = true;
+                if (jQuery('#effectiveAppsAgreeCB').is(':checked')) {
+                    jQuery(this).submit();
+                } else {
+                    alert(window.EFFECTIVE_APPS_TAC_ALERT);
+                    clearLoadingStateFromElement(null);
+                    return false;
+                }
+            });
+        }
+    }
+    let checkboxElement = document.createElement('p');
+    checkboxElement.innerHTML = '<input  style="-webkit-appearance: checkbox; float:none; vertical-align: middle;" type="checkbox" id="effectiveAppsAgreeCB" onchange="termsAndConditionsCheckboxChanged(this);"/>&nbsp;<label style="display:inline; float:none" for="agree">' + window.EFFECTIVE_APPS_TAC_TEXT + '</label>';
+    jQuery(window.EFFECTIVE_APPS_JQUERY_CHECKOUT_BUTTON_SELECTORS).each( function( i, element ) {
+        if (element !== undefined) {
+            let style = element.getAttribute('style');
+            if (style !== null) {
+                if (style.indexOf('display: none') > -1) {
+                    return true;
+                }
+            }
+            let coContainer = element.parentElement;
+            if (window.TAC_THEME_NAME.indexOf('debut') > -1) {
+                coContainer = element.parentElement.parentElement;
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('express') > -1) {
+                coContainer = element.parentElement.parentElement;
+                checkboxElement.style.textAlign = "right";
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('maker') > -1) {
+                coContainer = element.parentElement.parentElement.parentElement;
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('beyond') > -1) {
+                coContainer = element.parentElement.parentElement.parentElement;
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('dawn') > -1 || window.TAC_THEME_NAME.indexOf('taste') > -1 || window.TAC_THEME_NAME.indexOf('studio') > -1 || window.TAC_THEME_NAME.indexOf('craft') > -1 || window.TAC_THEME_NAME.indexOf('crave') > -1 || window.TAC_THEME_NAME.indexOf('sense') > -1) {
+                coContainer = element.parentElement.parentElement;
+                checkboxElement.style.textAlign = "right";
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('emerge') > -1) {
+                coContainer = element.parentElement.parentElement.parentElement;
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('blockshop') > -1) {
+                coContainer = element.parentElement.parentElement.parentElement;
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('ella') > -1 && window.TAC_THEME_NAME.indexOf('shella') === -1) {
+                checkboxElement.setAttribute('onclick', 'document.getElementById("effectiveAppsAgreeCB").checked = !document.getElementById("effectiveAppsAgreeCB").checked');
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('capital') > -1) {
+                coContainer = element.parentElement.parentElement;
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('kingdom') > -1) {
+                coContainer = element.parentElement.parentElement.parentElement;
+            }
+
+            if (window.TAC_THEME_NAME.indexOf('spark') > -1) {
+                coContainer = element.parentElement.parentElement;
+            }
+
+            if ("1" === "1") {
+                coContainer.insertBefore(checkboxElement.cloneNode(true), coContainer.firstChild);
+            }
+            else {
+                if (document.getElementById('effectiveAppsAgreeCB') === null) {
+                    if (jQuery(window.EFFECTIVE_APPS_JQUERY_CHECKOUT_BUTTON_SELECTORS).length > 1) {
+                        if (i > 0) {
+                            coContainer.insertBefore(checkboxElement.cloneNode(true), coContainer.firstChild);
+                        }
+                    }
+                    else {
+                        coContainer.insertBefore(checkboxElement.cloneNode(true), coContainer.firstChild);
+                    }
+                }
+
+                TAC_cloneCheckoutButton(element);
+            }
+        }
+    });
+    jQuery(this).unbind('click').submit();
+
+    try {
+        if ('False' === 'True') {
+            addTermsAndConditionsAgreementDateTimeToCart();
+        }
+        else {
+            disableAdditionalPaymentButtons();
+        }
+    }
+    catch (err) {
+
+    }
+}
+
+function clearLoadingStateFromElement(elementToClear) {
+    setTimeout(function() {
+        try {
+            if (elementToClear === null) {
+                elementToClear = TAC_detectCheckoutButton(false);
+            }
+
+            if (elementToClear.classList.contains('btn--loading')) {
+                elementToClear.classList.remove('btn--loading');
+            }
+
+            if (elementToClear.hasAttribute('disabled')) {
+                elementToClear.removeAttribute('disabled');
+            }
+
+            if (elementToClear.hasAttribute('data-loading')) {
+                elementToClear.removeAttribute('data-loading');
+            }
+        }
+        catch(err) {
+
+        }
+    }, 500);
+}
+
+function wrap(el, wrapper) {
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+}
+
+function openTermsAndConditionsCheckboxBINModal() {
+    window.EFFECTIVE_APPS_BIN_TAC_MODAL = new tingle.modal({
+		footer: true,
+		stickyFooter: false,
+		closeMethods: ['overlay', 'button', 'escape'],
+		cssClass: ['effective-apps-tac-modal'],
+	});
+	window.EFFECTIVE_APPS_BIN_TAC_MODAL.setContent("<h1 style='text-align: center'>" + window.EFFECTIVE_APPS_TAC_ALERT + "</h1>" + '<p style="text-align: center"><input style="-webkit-appearance: checkbox; float:none; vertical-align: middle;" type="checkbox" id="effectiveAppsAgreeCBModal" onchange="termsAndConditionsCheckboxChanged(this, true);"/>&nbsp;<label style="display:inline; float:none" for="agree">' + window.EFFECTIVE_APPS_TAC_TEXT + '</label></p>');
+	window.EFFECTIVE_APPS_BIN_TAC_MODAL.open();
+}
+
+function handleBuyItNowButton() {
+    if ('False' === 'False') {
+        try {
+            var buyItNowButtonContainer = document.querySelector('[class*="shopify-payment-button"]');
+            if (buyItNowButtonContainer === null) {
+                return;
+            }
+            var buyInNowAWrapper = document.createElement('a');
+            buyInNowAWrapper.id = 'effectiveAppsBINWrapper';
+            buyInNowAWrapper.style.textDecoration = 'none';
+            buyInNowAWrapper.href = 'javascript:openTermsAndConditionsCheckboxBINModal();';
+            wrap(buyItNowButtonContainer, buyInNowAWrapper);
+            buyItNowButtonContainer.firstChild.setAttribute('style', 'pointer-events: none');
+        }
+        catch (err)
+        {
+
+        }
+    }
+}
+
+function unHandleBuyItNowButton() {
+    try {
+        var buyInNowAWrapper = document.getElementById('effectiveAppsBINWrapper');
+        buyInNowAWrapper.removeAttribute('href');
+        var buyItNowButtonContainer = document.querySelector('[class="shopify-payment-button"]');
+        buyItNowButtonContainer.firstChild.setAttribute('style', 'pointer-events: auto');
+    }
+    catch (err) {
+
+    }
+}
+
+function TAC_attachToCartDrawer() {
+    if (document.getElementById('effectiveAppsAgreeCB') !== null) {
+        return;
+    }
+
+    let insertionType = "insertbefore";
+    let checkboxElement = document.createElement('p');
+    checkboxElement.innerHTML = '<input  style="-webkit-appearance: checkbox; float:none; vertical-align: middle;" type="checkbox" id="effectiveAppsAgreeCB" onchange="termsAndConditionsCheckboxChanged(this);"/>&nbsp;<label style="display:inline; float:none" for="agree">' + window.EFFECTIVE_APPS_TAC_TEXT + '</label>';
+	var checkoutButtonElement = TAC_detectCheckoutButton();
+	if ('False' === 'False' && "1" === "1") {
+	    checkoutButtonElement.setAttribute('onclick', "if (!document.getElementById('effectiveAppsAgreeCB').checked) { alert(window.EFFECTIVE_APPS_TAC_ALERT); clearLoadingStateFromElement(this); return false;} return true;");
+    }
+	if (null === checkoutButtonElement) {
+		return;
+	}
+
+	let elementContainer = checkoutButtonElement.parentElement;
+    if (window.TAC_THEME_NAME.indexOf('blockshop') > -1) {
+        elementContainer = checkoutButtonElement.parentElement.parentElement.parentElement;
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('ella') > -1 && window.TAC_THEME_NAME.indexOf('shella') === -1) {
+        checkboxElement.setAttribute('onclick', 'document.getElementById("effectiveAppsAgreeCB").checked = !document.getElementById("effectiveAppsAgreeCB").checked');
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('dawn') > -1 || window.TAC_THEME_NAME.indexOf('taste') > -1 || window.TAC_THEME_NAME.indexOf('studio') > -1 || window.TAC_THEME_NAME.indexOf('craft') > -1 || window.TAC_THEME_NAME.indexOf('crave') > -1 || window.TAC_THEME_NAME.indexOf('sense') > -1) {
+        elementContainer = checkoutButtonElement.parentElement.parentElement;
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('maker') > -1) {
+        elementContainer = checkoutButtonElement.parentElement.parentElement.parentElement;
+        checkboxElement.style.textAlign = 'center';
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('emerge') > -1) {
+        elementContainer = checkoutButtonElement.parentElement.parentElement;
+        checkboxElement.style.width = '100%';
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('empire') > -1) {
+        insertionType = "insertbeforeparent1";
+        elementContainer = checkoutButtonElement.parentElement.parentElement;
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('be yours') > -1) {
+        insertionType = "insertbeforeparent1";
+        elementContainer = checkoutButtonElement.parentElement.parentElement;
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('crave') > -1) {
+        elementContainer = checkoutButtonElement.parentElement.parentElement;
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('beyond') > -1) {
+        insertionType = "insertbeforeparent2";
+    }
+
+    if (window.TAC_THEME_NAME.indexOf('supply') > -1) {
+        checkboxElement.style.position = 'relative';
+        checkboxElement.style.marginBottom = '-1%';
+    }
+    else if (window.TAC_THEME_NAME.indexOf('brooklyn') > -1) {
+        checkboxElement.style.position = 'absolute';
+        checkboxElement.style.marginBottom = '-25%';
+        checkboxElement.style.top = '-20%';
+    }
+    else if (window.TAC_THEME_NAME.indexOf('boundless') > -1) {
+        checkboxElement.style.position = 'absolute';
+        checkboxElement.style.marginBottom = '-13%';
+        checkboxElement.style.top = '-25%';
+    }
+    else if (window.TAC_THEME_NAME.indexOf('debutify') > -1) {
+        checkboxElement.style.position = 'absolute';
+        checkboxElement.style.marginBottom = '-13%';
+        checkboxElement.style.top = '-25%';
+    }
+    else if (window.TAC_THEME_NAME.indexOf('barberry') > -1) {
+        elementContainer = checkoutButtonElement.parentElement.parentElement;
+    }
+    else if (window.TAC_THEME_NAME.indexOf('warehouse') > -1) {
+        elementContainer = checkoutButtonElement.parentElement.parentElement;
+    }
+
+    if (insertionType === "insertbeforeparent1") {
+        checkoutButtonElement.parentElement.insertAdjacentElement('beforebegin', checkboxElement.cloneNode(true));
+    }
+    else if (insertionType === "insertbeforeparent2") {
+        checkoutButtonElement.parentElement.parentElement.insertAdjacentElement('beforebegin', checkboxElement.cloneNode(true));
+    }
+    else {
+        elementContainer.insertBefore(checkboxElement.cloneNode(true), elementContainer.firstChild);
+    }
+
+    if ("1" === "2") {
+        TAC_cloneCheckoutButton(checkoutButtonElement);
+    }
+
+    try {
+        if ('False' === 'True') {
+            addTermsAndConditionsAgreementDateTimeToCart();
+        }
+        else {
+            disableAdditionalPaymentButtons();
+        }
+    }
+    catch (err) {
+
+    }
+}
+
+function TAC_cloneCheckoutButton(checkoutButtonElement) {
+    var clonedCheckoutButton = checkoutButtonElement.cloneNode(true);
+    var originalCheckoutButtonWrapper = document.createElement('span');
+    originalCheckoutButtonWrapper.style.display = "none";
+    originalCheckoutButtonWrapper.style.width = "0";
+    originalCheckoutButtonWrapper.style.height = "0";
+    checkoutButtonElement.setAttribute("tac-co-original", "true");
+    clonedCheckoutButton.setAttribute("type", "button");
+    clonedCheckoutButton.style.cursor = "pointer";
+    clonedCheckoutButton.removeAttribute("name");
+    clonedCheckoutButton.removeAttribute("id");
+    clonedCheckoutButton.removeAttribute("href");
+    clonedCheckoutButton.removeAttribute("data-checkout-button");
+    clonedCheckoutButton.setAttribute("tac-co-cloned", "true");
+    clonedCheckoutButton.setAttribute("onclick", "if (!document.getElementById('effectiveAppsAgreeCB').checked && 'False' === 'False') { alert(window.EFFECTIVE_APPS_TAC_ALERT); clearLoadingStateFromElement(this); return false;} document.querySelector('[tac-co-original=\"true\"]').click(); return true;");
+    checkoutButtonElement.insertAdjacentElement('beforebegin', clonedCheckoutButton);
+    wrap(checkoutButtonElement, originalCheckoutButtonWrapper);
+}
+
+function TAC_detectCheckoutButton(ignoreDisabled=true) {
+	var resultElement = null;
+	var disabledCssSelector = ':not([disabled])';
+	if (ignoreDisabled === false) {
+	    disabledCssSelector = '';
+	}
+
+	var checkoutButtonSelectors = [
+        '[tac-co-override="true"]',
+		'*[name="checkout"]' + disabledCssSelector,
+		'*[name="goto_pp"]' + disabledCssSelector,
+		'*[name="goto_gc"]' + disabledCssSelector,
+		'*[value*="Checkout"]',
+		'*[value*="Check out"]',
+		'*[href*="/checkout"]:not([href*="front_end/login"]):not([href*="/manage/subscription/"])',
+        '*[onclick*="/checkout"]',
+        '*[name="checkout-exemptify"]' + disabledCssSelector,
+        '*[id="checkout"]' + disabledCssSelector,
+        '*[data-cart-checkout-button]',
+        '*[class*="cart-button-checkout"]'
+	];
+	var cartFormSelectors = [
+		'input[type="submit"]:not([disabled])',
+		'input[type="button"]:not([disabled])'
+	];
+
+	for (var selector of checkoutButtonSelectors) {
+		var elementSearchResult = document.querySelectorAll(selector);
+		if (elementSearchResult.length > 1 && (window.TAC_THEME_NAME.indexOf('dawn') === -1 && window.TAC_THEME_NAME.indexOf('moodring') === -1)) {
+		    if (elementSearchResult[1].getAttribute('tac-ignore') === "true") {
+		        continue;
+		    }
+			return elementSearchResult[1];
+		} else if (elementSearchResult.length > 0) {
+		    if (elementSearchResult[0].getAttribute('tac-ignore') === "true") {
+		        continue;
+		    }
+			return elementSearchResult[0];
+		}
+	}
+
+	var cartFormElement = document.querySelector('form[action="/cart"]');
+	if (cartFormElement !== null) {
+		for (var selector of cartFormSelectors) {
+			var element = cartFormElement.querySelector(selector);
+			if (element !== null) {
+				return element;
+			}
+		}
+	}
+
+	return null;
+}
+
+function TAC_waitForCartDrawer() {
+	if (document.getElementById('effectiveAppsAgreeCB') !== null) {
+		return;
+	}
+
+	var checkoutButtonElement = TAC_detectCheckoutButton();
+	if (checkoutButtonElement === null) {
+		return;
+	}
+
+	if (TAC_isElementVisible(checkoutButtonElement) === true) {
+		if (window.effectiveAppsTacSp.length > 0) {
+            jQuery.getJSON('/cart.js').done(function(data) {
+                for (var item of data['items']) {
+                    if (window.effectiveAppsTacAllowedProducts.indexOf(item["product_id"].toString()) > -1) {
+                        TAC_attachToCartDrawer();
+                        break;
+                    }
+                }
+            });
+        }
+        else {
+		    TAC_attachToCartDrawer();
+	    }
+	}
+}
+
+function TAC_isElementVisible(element) {
+    if (element.getAttribute('tac-override') === 'true') {
+        return true;
+    }
+
+	if (element.offsetWidth === 0 || element.offsetHeight === 0) {
+	    return false;
+	}
+
+	var height = document.documentElement.clientHeight,
+		rects = element.getClientRects(),
+		on_top = function (r) {
+			var x = (r.left + r.right) / 2,
+				y = (r.top + r.bottom) / 2;
+
+			return (document.elementFromPoint(x, y) === element) || (document.elementFromPoint(x, y) !== null && document.elementFromPoint(x, y).parentElement === element);
+		};
+
+	for (var i = 0, l = rects.length; i < l; i++) {
+		var r = rects[i],
+			in_viewport = r.top > 0 ? r.top <= height : (r.bottom > 0 && r.bottom <= height);
+		if (in_viewport && on_top(r)) return true;
+	}
+	return false;
+}
+
+function addTermsAndConditionsAgreementDateTimeToCart() {
+    if (window.EFFECTIVE_APPS_TAC_ORDER_CONSENT_ATTRIBUTE.length < 1) {
+        return;
+    }
+
+    var nowTime = new Date();
+    jQuery.post('/cart/update.js', "attributes[" + window.EFFECTIVE_APPS_TAC_ORDER_CONSENT_ATTRIBUTE + "]=" + nowTime).always(function() {
+        var isAdded = false;
+        jQuery.getJSON('/cart.js').done(function(data) {
+            for (var attribute in data['attributes']) {
+                if (attribute === window.EFFECTIVE_APPS_TAC_ORDER_CONSENT_ATTRIBUTE) {
+                    isAdded = true;
+                }
+            }
+            if (isAdded === false) {
+                addTermsAndConditionsAgreementDateTimeToCart();
+            }
+        });
+    });
+}
+
+function removeTermsAndConditionsAgreementDateTimeFromCart() {
+    if (window.EFFECTIVE_APPS_TAC_ORDER_CONSENT_ATTRIBUTE.length < 1) {
+        return;
+    }
+
+    jQuery.post('/cart/update.js', "attributes[" + window.EFFECTIVE_APPS_TAC_ORDER_CONSENT_ATTRIBUTE + "]=null").always(function() {
+        var isRemoved = false;
+        jQuery.getJSON('/cart.js').done(function(data) {
+            for (var attribute in data['attributes']) {
+                if (attribute === window.EFFECTIVE_APPS_TAC_ORDER_CONSENT_ATTRIBUTE) {
+                    if (data['attributes'][attribute] === 'null') {
+                        isRemoved = true;
+                    }
+                }
+            }
+            if (isRemoved === false) {
+                removeTermsAndConditionsAgreementDateTimeFromCart();
+            }
+        });
+    });
+}
+
+function termsAndConditionsCheckboxChanged(targetElement, isFromModal = false) {
+    try {
+        if (targetElement.checked) {
+            addTermsAndConditionsAgreementDateTimeToCart();
+            if (isFromModal === false) {
+                enableAdditionalPaymentButtons();
+            }
+        }
+        else {
+            removeTermsAndConditionsAgreementDateTimeFromCart();
+            if (isFromModal === false) {
+                disableAdditionalPaymentButtons();
+            }
+        }
+    }
+    catch(err) {
+
+    }
+    if (isFromModal === false) {
+        if (jQuery('*[id="effectiveAppsAgreeCB"]').length > 1) {
+            jQuery('*[id="effectiveAppsAgreeCB"]').prop( "checked", (targetElement.checked) );
+        }
+    }
+
+    if (isFromModal === true) {
+        unHandleBuyItNowButton();
+        window.EFFECTIVE_APPS_BIN_TAC_MODAL.close();
+        try {
+            if (document.querySelector('[class*="shopify-payment-button"]').querySelector('[role="button"]') !== null) {
+                document.querySelector('[class*="shopify-payment-button"]').querySelector('[role="button"]').click();
+            }
+            else if (document.querySelector('[class*="shopify-payment-button"]').querySelector('[type="button"]') !== null) {
+                document.querySelector('[class*="shopify-payment-button"]').querySelector('[type="button"]').click();
+            }
+        }
+        catch (err)
+        {
+
+        }
+    }
+}
+
+function TAC_spLogic() {
+    if (window.location.href.indexOf("/cart") > -1) {
+        if (window.effectiveAppsTacSp.length > 0) {
+            jQuery.getJSON('/cart.js').done(function(data) {
+                for (var item of data['items']) {
+                    if (window.effectiveAppsTacAllowedProducts.indexOf(item["product_id"].toString()) > -1) {
+                        window.TermsAndConditionsCheckbox();
+                        break;
+                    }
+                }
+            });
+        }
+        else {
+            window.TermsAndConditionsCheckbox();
+        }
+    }
+    else {
+        if ('1' === '1') {
+            try {
+                if (window.effectiveAppsTacSp.length > 0) {
+                    if (window.effectiveAppsTacAllowedProducts.indexOf(ShopifyAnalytics.meta.product.id.toString()) > -1) {
+                        setTimeout(function() {
+                            handleBuyItNowButton();
+                        }, 500);
+                    }
+                }
+                else {
+                    setTimeout(function() {
+                        handleBuyItNowButton();
+                    }, 500);
+                }
+            }
+            catch(err) {
+
+            }
+        }
+
+        window.EFFECTIVE_APPS_TAC_CART_LISTENER = setInterval(TAC_waitForCartDrawer, 500);
+    }
+}
+
+function detectAccountButton() {
+    var resultElement = null;
+	var accountButtonsSelectors = [
+        '[tac-rl-override="true"]',
+		'[class*="Form__Submit Button Button--primary"]',
+        '[action*="/account/login"] button',
+		'[action*="/account"] [type="submit"]',
+		'[action*="/account"] button',
+		'[class*="cf-submit-form"]',
+		'[class*="form-action--submit"]'
+	];
+
+	for (var selector of accountButtonsSelectors) {
+		var elementSearchResult = document.querySelector(selector);
+		if (elementSearchResult === null) {
+		    continue;
+		}
+
+		if (elementSearchResult.getAttribute('tac-rl-ignore') === "true") {
+            continue;
+        }
+
+        return elementSearchResult;
+	}
+
+	return null;
+}
+
+function attachToAccountPage() {
+    var checkboxElement = document.createElement('div');
+    var accountButton = detectAccountButton();
+    var cbContainer = accountButton;
+    if (accountButton === null) {
+        return;
+    }
+
+    checkboxElement.id = "effectiveAppsAgreeCBAccountContainer";
+    checkboxElement.innerHTML = '<label style="display:inline-block; float:none"><input  style="-webkit-appearance: checkbox; float:none; vertical-align: middle; margin: 0; min-width: 5px;" type="checkbox" id="effectiveAppsAgreeCBAccount" />&nbsp;' + window.EFFECTIVE_APPS_TAC_TEXT + '</label>';
+    if (window.TAC_THEME_NAME.indexOf("simple") > -1) {
+        cbContainer = accountButton.parentElement;
+    }
+    else if (window.TAC_THEME_NAME.indexOf("broadcast") > -1) {
+        cbContainer = accountButton.parentElement;
+    }
+    else if (window.TAC_THEME_NAME.indexOf("express") > -1) {
+        checkboxElement.style.width = "100%";
+    }
+    else if (window.TAC_THEME_NAME.indexOf("empire") > -1) {
+        cbContainer = accountButton.parentElement;
+    }
+    else if (['dawn', 'sense', 'crave', 'craft', 'studio', 'taste'].indexOf(window.TAC_THEME_NAME) > -1) {
+        jQuery('head').append('<style type="text/css">#effectiveAppsAgreeCBAccountContainer a { display: inline-block !important;}</style>');
+    }
+
+    cbContainer.insertAdjacentElement('beforebegin', checkboxElement);
+    accountButton.setAttribute("onclick", "if (!document.getElementById('effectiveAppsAgreeCBAccount').checked && 'False' === 'False') { alert(window.EFFECTIVE_APPS_TAC_ALERT); clearLoadingStateFromElement(this); return false;} return true;");
+}
+
+function TAC_main() {
+    console.log('%c------ Terms and Conditions Checkbox by Effective Apps is Initializing ------', 'color: cyan');
+    console.log('%c------ Contact us at support@effectify.co for help and questions about the app ------', 'color: cyan');
+    window.EFFECTIVE_APPS_JQUERY_CHECKOUT_BUTTON_SELECTORS = '[tac-co-override="true"], [name="checkout"], [name="goto_pp"], [name="goto_gc"], [href="/checkout"], [value="Checkout"], [value="Check out"], [onclick*="/checkout"], [name="checkout-exemptify"], [id="checkout"], [data-cart-checkout-button], [class*="cart-button-checkout"]';
+    window.TAC_THEME_NAME = TAC_getShopifyThemeName();
+    window.EFFECTIVE_APPS_TAC_ORDER_CONSENT_ATTRIBUTE = `Agreed to the Terms and Conditions on`;
+    window.EFFECTIVE_APPS_TAC_TEXT = `<a href="https://hejabiegypt.com/pages/الأحكام-والشروط" target="_blank">أوافق على الشروط</a>`;
+    window.EFFECTIVE_APPS_TAC_ALERT = `يرجى الموافقة على الشروط والأحكام قبل الشراء!`;
+    if (window.TAC_SCRIPT_INJECTED === undefined) {
+	    window.TAC_SCRIPT_INJECTED = true;
+        try {
+            if (document.getElementById('satcb_sticky_cart') !== null) {
+                document.getElementById('satcb_sticky_cart').children[0].setAttribute('tac-ignore', 'true');
+            }
+        }
+        catch(err) {
+
+        }
+
+        window.effectiveAppsTacSp = '';
+        window.effectiveAppsTacAllowedProducts = window.effectiveAppsTacSp.split(',');
+        var tacCountriesStr = '';
+        if (tacCountriesStr !== '') {
+            var tacCountries = tacCountriesStr.split(',');
+            TAC_getGeolocationCountry(function(resultCountry) {
+                if (tacCountries.indexOf(resultCountry) > -1) {
+                    TAC_spLogic();
+                    TAC_accountPageLogic();
+                }
+            });
+        }
+        else {
+            TAC_spLogic();
+            TAC_accountPageLogic();
+        }
+    }
+}
+
+function TAC_accountPageLogic() {
+    if (['2','4'].indexOf('1') > -1 && location.pathname.indexOf('/account/register') > -1) {
+        attachToAccountPage();
+    }
+    else if (['3','4'].indexOf('1') > -1 && location.pathname.indexOf('/account/login') > -1) {
+        attachToAccountPage();
+    }
+}
+
+function TAC_loadjQuery(url, success){
+     var script = document.createElement('script');
+     script.src = url;
+     var head = document.getElementsByTagName('head')[0],
+     done = false;
+     head.appendChild(script);
+     script.onload = script.onreadystatechange = function() {
+        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+             done = true;
+             success();
+             script.onload = script.onreadystatechange = null;
+             head.removeChild(script);
+        }
+    };
+}
+
+function disableAdditionalPaymentButtons() {
+    if ('False' === 'False') {
+        if (document.getElementById('dynamic-checkout-cart') !== null) {
+            document.getElementById('dynamic-checkout-cart').setAttribute("style", "pointer-events: none");
+            jQuery("[class=additional-checkout-buttons], [class=additional_checkout_buttons], [class=cart__additional_checkout], [class*=additional]").bind("click", additionalPaymentButtonsClick);
+        }
+    }
+}
+
+function enableAdditionalPaymentButtons() {
+    if (document.getElementById('dynamic-checkout-cart') !== null) {
+        document.getElementById('dynamic-checkout-cart').setAttribute("style", "pointer-events: auto");
+        jQuery("[class=additional-checkout-buttons], [class=additional_checkout_buttons], [class=cart__additional_checkout], [class*=additional]").unbind("click", additionalPaymentButtonsClick);
+    }
+}
+
+function additionalPaymentButtonsClick() {
+    if (false === jQuery('#effectiveAppsAgreeCB').is(':checked')) {
+        alert(window.EFFECTIVE_APPS_TAC_ALERT);
+        return false;
+    }
+}
+
+function TAC_getGeolocationCountry(callback) {
+    jQuery.getJSON('https://wtfismyip.com/json', function(result) {
+        callback(result.YourFuckingCountryCode);
+    });
+}
+
+function TAC_getShopifyThemeName() {
+    try {
+        if (window.BOOMR !== undefined && window.BOOMR.themeName !== undefined && window.BOOMR.themeName.length > 0) {
+            return window.BOOMR.themeName.toLowerCase();
+        }
+        else {
+            return Shopify.theme.name.toLowerCase();
+        }
+    }
+    catch (err) {
+        return "";
+    }
+}
+
+function TAC_openPopup(url) {
+    var w = 600;
+    var h = 850;
+    var left = (screen.width/2)-(w/2);
+    var top = (screen.height/2)-(h/2);
+    return window.open(url, "", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+}
+
+if (typeof jQuery === 'undefined') {
+    TAC_loadjQuery('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js',
+        function () {
+            jQuery('head').append('<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.css">');
+            TAC_loadjQuery("https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.js", TAC_main);
+    });
+} else {
+    TAC_loadjQuery('https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.js',
+        function () {
+            jQuery('head').append('<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.css">');
+            TAC_main();
+    });
+}
+
+var _0x2245f3 = termsAndConditionsCheckboxChanged;
+var _0x2277f3 = clearLoadingStateFromElement;
+var _0x113d2f = openTermsAndConditionsCheckboxBINModal;
