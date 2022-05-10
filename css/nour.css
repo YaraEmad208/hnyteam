@@ -1,52 +1,67 @@
-.section-p1 {
+
+.try:hover{
+    box-shadow:10px 9px 8px #2e6080da;
+
+}
+
+/**{
+    box-sizing: border-box;
+}
+*/
+.cont{
+    margin-left: 10%;
+    margin-right:10%;
+}
+.section-p1{
     padding: 40px 80px;
 }
 
-.section-m1 {
+.section-m1{
     margin: 40px 0;
 }
 
+body{
+    width: 100%;
+}
 
+/*header start*/
 
-#header {
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
     background: #E3E6F3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    box-shadow: 05px 15px rgba(0,0,0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
 }
 
-#navbar {
+#navbar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#navbar li {
+#navbar li{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 20px ;
     position: relative;
 }
 
-#navbar li a {
+#navbar li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: #1a1a1a;
     transition: 0.3s ease;
-    padding: 15px;
-
-    display: block;
-
+    padding: 15px;/*new*/
+    display: block;/*new*/
 }
 
-#navbar li ul {
-
+#navbar li ul{/*new*/
     position: absolute;
     left: 0;
     width: 200px;
@@ -54,27 +69,23 @@
     display: none;
 }
 
-#navbar li ul li {
-
+#navbar li ul li{/*new*/
     width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.02);
-    position: relative;
-    right: 15px;
+    border-top: 1px solid rgba(0,0,0, 0.02);
 }
 
-#navbar li:focus-within>ul,
-
-#navbar li:hover>ul {
-    display: initial;
+#navbar li:focus-within > ul,/*new*/
+#navbar li:hover > ul{
+     display: initial;
 }
 
 #navbar li a:hover,
-#navbar li a.active {
+#navbar li a.active{
     color: #088178;
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after {
+#navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -84,102 +95,15 @@
     left: 20px;
 }
 
-#mobile {
-    display: none;
+#mobile{
+    display:none;
     align-items: center;
 }
 
-#close {
+#close{
     display: none;
 }
 
-@media (max-width:799px) {
-
-    .section-p1 {
-        padding: 40px 40px;
-    }
-
-    #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: #E3E6F3;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
-        padding: 80px 0 0 10px;
-        transition: 0.3s;
-    }
-
-    #navbar.active {
-        right: 0px;
-    }
-
-    #navbar li {
-        margin-bottom: 25px;
-    }
-
-    #navbar li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    #navbar li ul li {
-        background: #E3E6F3;
-    }
-
-    #mobile {
-        display: flex;
-        align-items: center;
-
-    }
-
-    #mobile i {
-        color: #1a1a1a;
-        font-size: 24px;
-        padding-left: 20px;
-    }
-
-    #close {
-        display: initial;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: #222;
-        font-size: 24px;
-    }
-
-    #hero {
-
-        height: 70vh;
-        background-position: top 30% right 30%;
-        padding: 0 80px;
-
-    }
-
-    #product1 .pro-container {
-        justify-content: center;
-    }
-
-    #product1 .pro {
-        margin: 15px;
-    }
-
-    #newsletter .form {
-        width: 70%;
-    }
-
-   
-
-    
-
-    
-
-}
 
 footer{
     display: flex;
@@ -188,14 +112,14 @@ footer{
     background-color:#E3E6F3;
 }
 
-footer .col{
+footer.col{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-footer h4{
+footer H4{
     font-size: 14px;
     padding-bottom: 20px;
 }
@@ -212,43 +136,5849 @@ footer a{
     margin-bottom: 10px;
 }
 
-footer .follow{
+footer.follow{
     margin-top: 20px;
 
 }
 
-footer .follow i{
+footer.followi{
     color: #465b52;
-    padding-right: 4px;
+    padding-rigHt: 4px;
     cursor: pointer;
 }
 
-footer .follow i:hover,
-footer a:hover{
+footer.followi:Hover,
+footer a:Hover{
     color: #088178;
+}
+
+footer.copyrigHt{
+    widtH: 100%;
+    text-align: center;
 }
 
 
 
 
-
-@media  (max-width:477px) {
+@media  (max-widtH:477px) {
 
     .section-p1{
         padding: 20px;
     }
 
-     
+     footer.copyrigHt{
+         text-align: start;
+     }
+
  }
 
 
 
+#tem50{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem49{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem48{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem47{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem46{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem45{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem44{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem43{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem42{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem41{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem40{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem39{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem38{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem37{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem36{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem35{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem34{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem33{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem32{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem31{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem30{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem29{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem28{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem27{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem26{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem26{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+
+#tem25{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem24{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem23{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem22{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem21{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem20{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem19{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem18{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem17{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem16{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem15{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem14{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem13{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem12{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem11{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem10{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem9{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem8{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem7{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem6{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem5{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem4{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem3{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem2{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem1{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+
+#tem3333333333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem333333333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem33333333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem3333333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem333333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem33333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem3333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem333{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem2222222222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem222222222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem22222222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem2222222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+
+#tem222222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem22222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem2222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem222{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem1111111111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem111111111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem11111111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem1111111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem111111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem11111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem1111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem1111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem4444444444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem444444444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem44444444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem4444444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem444444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem44444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem4444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem444{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem44{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem4{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temoooooooooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temooooooooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temoooooooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temooooooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temoooooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temooooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temoooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temooo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temoo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temo{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem0000000000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+
+#tem000000000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem00000000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem0000000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem000000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem00000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem0000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem00{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem0{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkkkkkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkkkkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkkkkkkkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkkkkkkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem100{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem99{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem98{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem97{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem96{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem95{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem94{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem93{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem92{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem91{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem90{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem89{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem88{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem87{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem86{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem85{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem84{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem83{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem82{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem81{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem80{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem79{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem78{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem77{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem76{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem75{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem74{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem73{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem72{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem71{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem70{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem69{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem68{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem67{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem66{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem65{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem64{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem63{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem62{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem61{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem60{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem59{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem58{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem57{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem57{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem56{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem55{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem54{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem53{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem52{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem51{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+}
+.about{
+    color: #063041;
+    background-color: #98b0c7;
+    padding: 10px 10px ;
+    margin: 5px 5px;
+    box-shadow: 05px 15px 12px rgba(33, 36, 209, 0.6);
+}
+#tem1:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+
+.aboutnnnnnnn:hover{
+    color: #010e13;
+    background-color: #9449a7;
+    padding: 10px 10px ;
+    margin: 5px 5px;
+    box-shadow: 05px 15px 12px rgba(149, 39, 153, 0.6);
+}
+#temnnnnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnnnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem4444444444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem444444444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem44444444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem44444444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem4444444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem444444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem44444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem4444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem444:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem44:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem4:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem33333333333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem3333333333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem333333333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem33333333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem3333333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem333333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem33333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem3333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem333:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem22222222222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem2222222222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem222222222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem22222222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem2222222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem222222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem22222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem2222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem222:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem11111111111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem1111111111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem111111111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem11111111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem1111111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem111111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem11111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem1111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem111:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem11:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem1:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem00000000000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem0000000000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem000000000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem00000000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem0000000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem000000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem00000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem0000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem000:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem00:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem0:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem100:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem99:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem98:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem97:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem96:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem95:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem94:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem93:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem92:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem91:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem90:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem89:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+
+#tem88:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem87:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem86:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem85:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem84:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem83:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem82:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem81:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem80:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem79:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem78:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem77:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem76:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem75:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem74:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem73:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem72:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem71:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem70:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem69:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem68:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem67:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem66:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem65:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem64:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem63:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem62:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem61:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem60:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem59:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem58:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem57:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem56:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem55:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem54:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem53:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem52:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem51:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem50:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem49:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem48:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem47:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem46:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+
+
+
+#tem45:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem44:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem43:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem42:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem41:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem40:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem39:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem38:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem37:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem36:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem35:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem34:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem33:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem32:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem31:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem30:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem29:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem28:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem27:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem26:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem25:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem24:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem23:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem22:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem21:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem20:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem19:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem18:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem17:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem16:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem15:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem14:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem13:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem12:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem11:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem10:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem9:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem8:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem7:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem6:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem5:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem4:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem3:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem2:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#tem1:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkkkkkkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkkkkkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkkkkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkkkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temkk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}#temk:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temooooooooooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temoooooooooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temooooooooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temoooooooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+
+#temooooooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temoooooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temooooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temoooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temooo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temoo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temo:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmmmmmmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmmmmmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmmmmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmmmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temmm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temm:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnnnnnnnnnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnnnnnnnnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnnnnnnnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+#temnnnnnnnn:hover{
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+
+
+}
+.about:hover{
+    color: #061925da;
+    background-color: #aa5e77ea;
+    box-shadow: 10px 7px 6px rgb(184, 83, 121);
+}
+#tem00000000000:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+#tem111111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem00000000000{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem111111:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+#tem11111111111{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem11111111111:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+
+
+
+
+
+
+#temnnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnnn:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+#temnnnnnnnnnnn{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temnnnnnnnnnnn:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+#temko{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temko:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+
+#temkkkkkk{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temkkkkkk:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+
+
+
+
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+  
+
+    
+    
+}
+
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem588{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem588:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem599{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem599:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem677{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem677:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem900{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem900:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#tem911{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#tem911:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzzzzzzzzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzzzzzzzzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzzzzzzzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzzzzzzzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzzzzzzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzzzzzzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzzzzzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzzzzzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzzzzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzzzzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzzzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzzzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temzz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temzz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+#temz{
+   
+    display:none;
+    color: rgb(19, 52, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px ;
+    margin: 10px;
+    text-align:right;
+    transition: all .6s linear;
+  
+    
+    
+}
+#temz:hover{
+   
+    color: rgb(34, 139, 165);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:40px ;
+    margin: 10px;
+    transition: all .8s linear;
+}
+.cont{
+    background-color: #063041;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.non2 td{
+    border-radius: 10px;
+    color: #3a0146;
+    border-color: #9e5194da;
+    border-style: ridge;
+    min-width: 20%;
+    width: auto;
+    background-color :#262747da;
+}
+.caption2{
+    font-size: xx-large;
+    color: #e190e4;
+    font-style: bold;
+
+}
+.nu2 td{
+    background-color: #c39ecc;
+    font-style: normal;
+    color: #1a1a1a;
+    border-style: double;
+    font-size:larger;
+   
+    border-color:#a036aada ;
+}
+.wow2{
+    width: 1300px;
+    margin: 20px;
+    height: 400px;
+}
+.non2{
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+   
+    left: 5%;
+} 
+
+.img2{
+display:inline-block;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+}
+ .link:hover
+{
+    background-color:rgb(173, 110, 134);
+    box-shadow: 10px 7px 8px rgb(163, 58, 98);
+}
+
 body {
 
-    background-image:url(no.jpg)  ;
-    background-attachment: fixed;
+    background-image:url(../media/n.media/back/back1.jpg)  ;
+    
     direction: ltr;
     text-transform: initial;
+    background-repeat: repeat;
+  
+    
 
 
 }
@@ -306,6 +6036,8 @@ body {
     margin: 10px;
     text-align:right;
     transition: all .6s linear;
+    display: none;
+    
     
  }
 
@@ -460,7 +6192,7 @@ body {
 .Hair99:hover{
     width: 260px;
     height: 360px;
-    border-color: rgb(189, 59, 109);
+    border-color: rgb(189, 176, 250);
     border-style: solid;
     border-radius: 85px;
 }
@@ -472,15 +6204,7 @@ body {
     font-weight: 150;
 
 }
-.tem:hover{
-    color: rgb(34, 139, 165);
-    font-family:Arial, Helvetica, sans-serif;
-    font-style:italic;
-    font-size:40px ;
-    margin: 10px;
-    transition: all .8s linear;
-  
-}
+
 
 .buy{
     width: 55px;
@@ -499,7 +6223,7 @@ body {
     border-style: ridge;
     min-width: 20%;
     width: auto;
-    background-color: #ebd9e0fa;
+    background-color:rgb(228, 194, 214);
     
     
     
@@ -513,13 +6237,13 @@ body {
 }
 
    .nu td{
-       background-color: #cea6b6fa;
+       background-color: #bdc1f5da;
        font-style: normal;
        color: #1a1a1a;
        border-style: double;
        font-size:larger;
       
-       border-color:#df93b0da ;
+       border-color:rgb(189, 176, 250) ;
    }
 
    .wow1{
@@ -530,11 +6254,11 @@ body {
    
       
     .non{
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
         position: relative;
        
-        left: 5%;
+       
     } 
   
    .img{
@@ -622,69 +6346,47 @@ body {
   
   
   }
+  .sliderkoka{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
   
-     
-
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color:#E3E6F3;
+}
+.sliderkoka ul{
+    padding: 0;
+    width: 11000px;
+    list-style: none;
+    position: relative;
+    animation: sliding 17s ease-in-out infinite
+}
+.sliderkoka ul li{
+    float: left;
+    height: 500px;
 }
 
-footer .col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
+.sliderkoka img{
+    width: 1000px;
+    height: 500px;
 }
-
-footer h4{
-    font-size: 14px;
-    padding-bottom: 20px;
+.sliderkoka ul:hover{
+   animation-play-state: paused;
 }
-
-footer p{
-    font-size: 13px;
-    margin: 0 0 8px 0;
-}
-
-footer a{
-    font-size: 13px;
-    text-decoration: none;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-footer .follow{
-    margin-top: 20px;
+@keyframes sliding{
+    0%,5%{left: 0}
+    10%{left: -1000px}
+   15%,20%{left: -2000;}
+    25%,30%{left: -3000px;}
+    35%,40%{left: -4000px;}
+   45%,50%{left: -5000px;}
+   55%,60%{left: -6000px;}
+   65%,70%{left: -7000px;}
+    75%,80%{left: -8000px;}
+  85%,90%{left: -9000px;}
+  95%,98%{left: -10000px;}
 
 }
 
-footer .follow i{
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
-}
-
-footer .follow i:hover,
-footer a:hover{
-    color: #088178;
-}
-
-
-
-
-
-
-@media  (max-width:477px) {
-
-    .section-p1{
-        padding: 20px;
-    }
-
-     
- }
 
 
 
