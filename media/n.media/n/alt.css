@@ -1,0 +1,469 @@
+
+
+}
+
+ 
+ <ul>
+                      <li><a href="#">Hair Care</a> </li>
+                      <li><a href="#">Skin Care</a> </li>
+                      <li><a href="#">Make Up</a> </li>
+                    </ul>
+                    class="active"
+                    <section id="header">
+        
+                    <!--<a href="#"><img src="images10/logo1.jpg" class="logo" alt=""></a>-->
+                    
+                    <div class="logo">
+                      <h1>HNY</h1>
+                    </div>
+                    <div>
+                        <ul id="navbar">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#"class="active">Shopping</a>
+                             
+                             <ul>
+                                  <li><a href="#">Women Wear</a></li>
+                                  <li><a href="#">Women Shoe</a></li>
+                                  <li><a href="#">Men Wear</a></li>
+                                  <li><a href="#">Men Shoe</a></li>
+                             </ul>
+                           </li>
+                            <li><a href="#">Food court</a></li>
+                            <li><a href="#">Entertainment</a></li>
+                            <li><a href="#" >Beauty</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Books</a></li>
+                             <a href="#" id="close"> <i class="far fa-times"></i></a>
+           
+                        </ul>
+                    </div>
+                    <div id="mobile">
+                        <i id="bar"class="fas fa-outdent"></i>
+                    </div>
+                 </section>
+           
+                 
+                 .Hair :hover,
+                 .Hair1:hover ,
+                 .Hair2:hover ,
+                 .Hair3:hover ,
+                 .Hair4 :hover ,
+                 .Hair5 :hover,
+                 .Hair6:hover ,
+                 .Hair7 :hover,
+                 .Hair8 :hover,
+                 .Hair9:hover ,
+                 .Hair00 :hover,
+                 .Hair11 :hover,
+                 .Hair22 :hover{
+                      width: 300px;
+                      height:380px;
+                      border-radius: 45%;
+                      box-shadow: 0 0 2px 1px rgba(2,69,94, 0.5) ;
+                      border-color: rgb(48, 140, 156);
+                      border-style: initial;
+                  }
+                  <section id="header">
+                  <!--
+                  <a href="#"><imgsrc="images10/logo1.jpg" class="logo" alt=""></a>
+                  -->
+                  <div class="logo">
+                    <h1>HNY</h1>
+                  </div>
+                  <div>
+                      <ul id="navbar">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#"class="active">Shopping</a>
+                            <ul>
+                                <li><a href="#">Women Wear</a></li>
+                                <li><a href="#">Women Shoe</a></li>
+                                <li><a href="#">Men Wear</a></li>
+                                <li><a href="#">Men Shoe</a></li>
+                            </ul>
+                         </li>
+                          <li><a href="#">Food court</a></li>
+                          <li><a href="#">Entertainment</a></li>
+                          <li><a href="#">Beauty</a></li>
+                          <li><a href="#">Electronics</a></li>
+                          <li><a href="#">Books</a></li>
+                          <a href="#"id="close"><i class="far fa-times"></i></a>
+          
+                      </ul>
+                  </div>
+                  <div id="mobile">
+                      <i id="bar"class="fas fa-outdent"></i>
+                  </div>
+              </section>ul>البراندات المتوفرة
+              <li>براندات الشامبو
+                <ul>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                </ul>
+              </li>
+              <li>براندات السيرم
+                <ul>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+                <li>براند  </li>
+              </ul>
+            </li>
+              <li>براندات الكريم
+                <ul>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li>براند  </li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات الزيوت
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات الفرش الكهربية
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات البلسم
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات حمام الكريم
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات منتجات فك التشابك
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>منتجات الشعر الكيرلى
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات بديل الذيت
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>براندات
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+
+
+                color: #1a1a1a;
+                background-color: #e9a1bf;
+                border-style: double;
+                font-style: bold;
+            
+                width: 280px;
+                height: 200px;
