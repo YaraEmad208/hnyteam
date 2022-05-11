@@ -90,12 +90,11 @@ body{
     display: none;
 }
 
-
 footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:#1abbb3;
+    background-color:#E3E6F3;
 }
 
 footer.col{
@@ -112,7 +111,7 @@ footer H4{
 
 footer p{
     font-size: 13px;
-    margin: 008px 0;
+    margin: 0 0 8px 0;
 }
 
 footer a{
@@ -145,7 +144,6 @@ footer.copyrigHt{
 
 
 
-
 @media  (max-widtH:477px) {
 
     .section-p1{
@@ -158,10 +156,9 @@ footer.copyrigHt{
 
  }
 
-
 body {
 
-    background-image:url(ko.jpg)  ;
+    background-image:url(../media/n.media/back/backk.jpg)  ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     direction: ltr;
@@ -170,7 +167,6 @@ body {
     background-attachment: scroll;
     background-size: cover;
     background-attachment: fixed;
-
 
 }
 .Hair3333,
@@ -385,7 +381,7 @@ margin-right: 5px;
       box-shadow: 05px 10px 6px rgba(29, 28, 28, 0.4);
 
   }
-  #pay1{
+  #pay2{
       
       margin-left:44.5% ;
       border-color:#dab3d8fa;
@@ -395,18 +391,9 @@ margin-right: 5px;
       display:none;
       
   }
-  
-  #pay2{
-      
-    margin-left:31%;
-    border-color:#dab3d8fa;
-    border-radius: 7px;
-    border-style: double;
-    box-shadow: 05px 10px 9px rgba(127, 69, 161, 0.815);
-    display:inline;     
-   
+ 
     
-}
+
 .input{
     background-color: #e6c3db;
     margin-left: 43.5%;
@@ -421,7 +408,6 @@ margin-right: 5px;
     box-shadow:5px 7px 9px rgba(80, 32, 54, 0.815);
     background-color: #c39ecc;
 
-
 }
 
 .momomo{
@@ -431,7 +417,92 @@ margin-right: 5px;
    margin-top: 0%;
    margin-bottom: 0%;
 }
+.sliderkoka ul{
+    padding: 0;
+    width: 11000px;
+    list-style: none;
+    position: relative;
+    animation: sliding 13s ease-in-out infinite
+}
+.sliderkoka ul li{
+    float: left;
+    height: 500px;
+}
 
-    
-    
+.sliderkoka img{
+    width: 1000px;
+    height: 500px;
+}
+.sliderkoka ul:hover{
+   animation-play-state: paused;
+}
+@keyframes sliding{
+    0%,5%{left: 0}
+    10%{left: -1000px}
+   15%,20%{left: -2000;}
+    25%,30%{left: -3000px;}
+    35%,40%{left: -4000px;}
+   45%,50%{left: -5000px;}
+   55%,60%{left: -6000px;}
+   65%,70%{left: -7000px;}
+    75%,80%{left: -8000px;}
+  85%,90%{left: -9000px;}
+  95%,98%{left: -10000px;}
+
+}
+.sliderkoka{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+  
+}
+.sliderkoka ul{
+    padding: 0;
+    width: 11000px;
+    list-style: none;
+    position: relative;
+    animation: sliding 17s ease-in-out infinite
+}
+.sliderkoka ul li{
+    float: left;
+    height: 500px;
+}
+
+.sliderkoka img{
+    width: 1000px;
+    height: 500px;
+}
+.sliderkoka ul:hover{
+   animation-play-state: paused;
+}
+@keyframes sliding{
+    0%,5%{left: 0}
+    10%{left: -1000px}
+   15%,20%{left: -2000;}
+    25%,30%{left: -3000px;}
+    35%,40%{left: -4000px;}
+   45%,50%{left: -5000px;}
+   55%,60%{left: -6000px;}
+   65%,70%{left: -7000px;}
+    75%,80%{left: -8000px;}
+  85%,90%{left: -9000px;}
+  95%,98%{left: -10000px;}
+
+}
+
+.koka2{
+   
+    background-color: #d189bb;
+}
+.koka2:hover{
+    box-shadow:10px 20px 10px #bc6dbe;
+}
+.div0{
+    margin: 1% 1% 1% 1% ;
+    top:0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
     
