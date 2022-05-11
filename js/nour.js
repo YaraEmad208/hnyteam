@@ -24,3 +24,12 @@ function send(){
    
 
 }
+function ko(){
+    alert("please enter \n your name\n your phone number\n your adress\n the date that you want to recieve the product");
+
+}
+function so(){
+    alert("Your data has been sent successfully and we will contact you as soon as possible");
+
+}
+
